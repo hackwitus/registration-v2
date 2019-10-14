@@ -7,5 +7,4 @@ cache:
     - node_modules
 script:
   - cd app/client
-  - yarn lint
   - yarn test
