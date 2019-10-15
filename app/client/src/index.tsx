@@ -1,15 +1,16 @@
 import * as React from 'react';
-import * as ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
-import { store } from './redux/store';
 
-import App from './App';
+import { configureStore } from './store';
+import App from './pages/App';
+import './assets/sass/main.scss';
+
+const store = configureStore();
 
 ReactDOM.render(
   <Provider store={store}>
-    <>
-      <App />
-    </>
+    <App />
   </Provider>,
-  document.getElementById('root')
+  document.querySelector('#root')
 );
