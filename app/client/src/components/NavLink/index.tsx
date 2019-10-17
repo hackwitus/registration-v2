@@ -9,3 +9,5 @@ interface INavLinkProps {
 const NavLink: React.FC<INavLinkProps> = ({ label, to }) => {
   return <Link to={to}>{label}</Link>;
 };
+
+export default NavLink;
