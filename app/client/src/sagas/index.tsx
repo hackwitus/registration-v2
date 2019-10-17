@@ -1,6 +1,7 @@
 // eslint-disable-next-line
-import { all, call } from 'redux-saga/effects';
+import { all } from 'redux-saga/effects';
+import { handleAuthenticationCallback } from './userSaga';
 
 export function* rootSaga() {
-  yield all([]);
+  yield all([handleAuthenticationCallback()]);
 }

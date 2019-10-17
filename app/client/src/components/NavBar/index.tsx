@@ -1,25 +1,23 @@
 import * as React from 'react';
-import { Button, Dropdown } from 'semantic-ui-react';
+import { Button, Dropdown, Header } from 'semantic-ui-react';
+import { signIn, signOut } from '../../auth/auth0-spa';
 import logo from '../../assets/images/logo.png';
+import { connect } from 'react-redux';
 
-interface NavbarProps {
+interface NavBarProps {
   user: any;
-  loading: boolean;
-  isAuthenticated: boolean;
-  logout: Function;
-  login: Function;
 }
 
-const NavBar: React.FC<NavbarProps> = props => {
+const NavBar: React.FC<NavBarProps> = ({ user }) => {
   const renderProfile = () => {
-    if (!props.loading && props.isAuthenticated) {
+    if (user.authenticated) {
       return (
         <>
-          <img src={props.user.picture} alt="" className="navbar__user-image" />
-          <Dropdown text={`Hi ${props.user.nickname}`} pointing>
+          <img src={user.profile.picture} alt="" className="navbar__user-image" />
+          <Dropdown text={`Hi ${user.profile.nickname}`} pointing>
             <Dropdown.Menu>
               <Dropdown.Header>User Actions</Dropdown.Header>
-              <Dropdown.Item onClick={() => props.logout()}>Log Out</Dropdown.Item>
+              <Dropdown.Item onClick={() => signOut()}>Log Out</Dropdown.Item>
             </Dropdown.Menu>
           </Dropdown>
         </>
@@ -27,7 +25,7 @@ const NavBar: React.FC<NavbarProps> = props => {
     } else {
       return (
         <>
-          <Button primary onClick={() => props.login()}>
+          <Button primary onClick={() => signIn()} size="big">
             Sign In
           </Button>
         </>
@@ -39,10 +37,17 @@ const NavBar: React.FC<NavbarProps> = props => {
     <div className="navbar">
       <div className="navbar__logo-container">
         <img src={logo} alt="site logo" className="navbar__logo-img" />
+        <h1 className="navbar__logo-text">HackWITus Registration V2</h1>
       </div>
       <div className="navbar__user-container">{renderProfile()}</div>
     </div>
   );
 };
 
-export default NavBar;
+const mapStateToProps = (state: any) => {
+  return {
+    user: state.user,
+  };
+};
+
+export default connect(mapStateToProps)(NavBar);

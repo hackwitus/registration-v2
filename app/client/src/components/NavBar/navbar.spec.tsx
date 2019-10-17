@@ -8,9 +8,7 @@ enzyme.configure({ adapter: new Adapter() });
 
 describe('App Tests', () => {
   it('Renders App Content', () => {
-    const wrapper = shallow(
-      <NavBar user={undefined} loading={true} isAuthenticated={false} logout={() => {}} login={() => {}} />
-    );
+    const wrapper = shallow(<NavBar />);
     expect(wrapper.find(Button)).toHaveLength(1);
   });
 });
