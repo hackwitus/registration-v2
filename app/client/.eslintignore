@@ -1,2 +1,3 @@
 src/serviceWorker.*
 src/**/__tests__/**
+src/auth/**
