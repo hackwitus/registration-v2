@@ -9,6 +9,7 @@ import Navbar from '../components/NavBar';
 import ProtectedRoute from '../components/PrivateRoute';
 import Callback from '../containers/Callback';
 import Sidebar from '../components/SideBar';
+import Registration from './Registration';
 
 const App: React.FC = () => {
   return (
@@ -19,6 +20,7 @@ const App: React.FC = () => {
         <div className="app__view">
           <Switch>
             <Route exact path="/" component={Landing} />
+            <Route exact path="/registration" component={Registration} />
             <Route exact path="/callback" component={Callback} />
             <ProtectedRoute path="/protected" component={() => <Header>Hello Protection</Header>} />
           </Switch>

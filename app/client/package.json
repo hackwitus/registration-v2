@@ -16,6 +16,7 @@
     "enzyme": "3.10.0",
     "enzyme-adapter-react-16": "1.15.1",
     "eslint-plugin-react": "7.16.0",
+    "formik": "1.5.8",
     "history": "4.10.1",
     "node-sass": "4.12.0",
     "react": "16.10.2",
@@ -30,7 +31,8 @@
     "redux-saga": "1.1.1",
     "redux-thunk": "2.3.0",
     "semantic-ui-react": "0.88.1",
-    "typescript": "3.6.4"
+    "typescript": "3.6.4",
+    "yup": "0.27.0"
   },
   "scripts": {
     "start": "react-scripts start",

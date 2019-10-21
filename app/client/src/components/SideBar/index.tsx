@@ -1,5 +1,4 @@
 import * as React from 'react';
-import { Link } from 'react-router-dom';
 import NavLink from '../NavLink';
 
 const Sidebar: React.FC = () => {
@@ -9,6 +8,12 @@ const Sidebar: React.FC = () => {
       <NavLink
         label="Registration"
         route="/registration"
+        className="sidebar__link"
+        activeClass="sidebar__link--active"
+      />
+      <NavLink
+        label="Confirmation"
+        route="/confirmation"
         className="sidebar__link"
         activeClass="sidebar__link--active"
       />
