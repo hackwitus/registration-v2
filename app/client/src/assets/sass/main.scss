@@ -1,1 +1,12 @@
+@import '/abstracts/variables';
+
 @import './components/navbar';
+@import '/components/sidebar';
+@import '/components/status-card';
+
+@import '/pages/app';
+
+body,
+html {
+  background-color: #f7f7f7;
+}

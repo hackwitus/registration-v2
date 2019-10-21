@@ -1,0 +1,13 @@
+.app {
+  height: calc(100vh - 7rem);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  &__view {
+    flex: 0 0 80%;
+    height: 100%;
+    border: 1px solid orangered;
+    padding: 2rem;
+  }
+}

@@ -1,11 +1,15 @@
 import * as React from 'react';
-import Navbar from '../../components/NavBar';
+import StatusCard from '../../components/StatusCard';
 
 const Landing: React.FC = () => {
   return (
-    <>
-      <Navbar />
-    </>
+    <StatusCard
+      statusHeader="your status:"
+      status="confirmed"
+      message="Welcome back Mike!"
+      registrationDeadline={new Date()}
+      confirmationDeadline={new Date()}
+    />
   );
 };
 

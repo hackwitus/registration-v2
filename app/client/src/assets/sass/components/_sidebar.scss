@@ -1,0 +1,44 @@
+.sidebar {
+  height: 100%;
+  flex: 0 0 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: $color-black-light;
+
+  &__link:visited,
+  &__link:link {
+    position: relative;
+    font-size: 1.5rem;
+    text-align: center;
+    color: $color-white;
+
+    width: 100%;
+    padding: 2.5rem;
+    border-left: $sidebar-border;
+    transition: all 0.2s ease-out;
+  }
+
+  &__link:hover {
+    background-color: $color-black-hover;
+    border-left: $sidebar-border-hover;
+  }
+
+  &__link--active {
+    border-left: $sidebar-border-active !important;
+  }
+
+  &__link--active::before {
+    position: absolute;
+    top: 50%;
+    left: 0.5rem;
+    transform: translate(-50%, -50%);
+
+    font-family: 'Font Awesome 5 Pro';
+    content: '\f0da';
+    font-weight: 900;
+    font-size: 5rem;
+    color: $color-primary;
+  }
+}

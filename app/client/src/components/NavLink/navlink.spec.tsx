@@ -10,7 +10,7 @@ describe('NavLink Tests', () => {
   it('Renders NavLink Content', () => {
     const wrapper = shallow(
       <Provider store={configureStore()}>
-        <NavLink label="test" to="/" />
+        <NavLink label="test" route="/" className="nav-link" activeClass="nav-link--active" />
       </Provider>
     );
     expect(wrapper.find(NavLink).exists());

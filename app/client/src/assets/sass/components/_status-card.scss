@@ -1,0 +1,82 @@
+.status-card {
+  background: #fff;
+  box-shadow: 0 1px 2px #ccc;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+
+  &__header {
+    text-transform: uppercase;
+    letter-spacing: 0.25rem;
+
+    &--incomplete {
+      color: $color-dove-grey-2;
+    }
+
+    &--submitted {
+      color: $color-pending;
+    }
+
+    &--admitted {
+      color: $color-primary;
+    }
+
+    &--confirmed {
+      color: $color-secondary;
+    }
+
+    &--declined {
+      color: $color-danger;
+    }
+  }
+
+  &__status {
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: $color-white;
+
+    &--incomplete {
+      background-color: $color-dove-grey-2;
+    }
+
+    &--submitted {
+      background-color: $color-pending;
+    }
+
+    &--admitted {
+      background-color: $color-primary;
+    }
+
+    &--confirmed {
+      background-color: $color-secondary;
+    }
+
+    &--declined {
+      background-color: $color-danger;
+    }
+  }
+
+  &__message {
+    font-weight: 400;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  &__key {
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+  }
+
+  &__value {
+    font-weight: normal;
+    text-transform: none;
+  }
+}

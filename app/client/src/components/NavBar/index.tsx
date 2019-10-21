@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Button, Dropdown, Header } from 'semantic-ui-react';
+import { Button, Dropdown } from 'semantic-ui-react';
 import { signIn, signOut } from '../../auth/auth0-spa';
 import logo from '../../assets/images/logo.png';
 import { connect } from 'react-redux';

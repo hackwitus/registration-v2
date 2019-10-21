@@ -1,13 +1,25 @@
 import * as React from 'react';
-import { Link } from 'react-router';
+import { Link } from 'react-router-dom';
+import { connect } from 'react-redux';
 
 interface INavLinkProps {
+  className: string;
   label: string;
-  to: string;
+  route: string;
+  activeClass: string;
+  currentRoute: string;
 }
 
-const NavLink: React.FC<INavLinkProps> = ({ label, to }) => {
-  return <Link to={to}>{label}</Link>;
+const NavLink: React.FC<INavLinkProps> = ({ className, label, route, activeClass, currentRoute }) => {
+  return (
+    <Link className={`${className} ${currentRoute === route ? activeClass : ''}`} to={route}>
+      {label}
+    </Link>
+  );
 };
 
-export default NavLink;
+const mapStateToProps = (state: any) => ({
+  currentRoute: state.router.location.pathname,
+});
+
+export default connect(mapStateToProps)(NavLink);
