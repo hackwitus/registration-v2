@@ -22,7 +22,7 @@ const Sidebar: React.FC<SidebarProps> = ({ visible, toggleSidebar }) => {
       onHide={() => toggleSidebar()}
       vertical
       visible={visible}
-      size="large"
+      size="huge"
     >
       <Menu.Item
         as={() => <NavLink label="Home" route="/" className="sidebar__link" activeClass="sidebar__link--active" />}

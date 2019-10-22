@@ -25,6 +25,10 @@
   }
   &__logo-text {
     margin: 0 1rem;
+    @media screen and (max-width: 650px) {
+      visibility: hidden;
+      display: none;
+    }
   }
   &__user-container {
     margin-left: auto;

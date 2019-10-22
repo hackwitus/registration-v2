@@ -1,7 +1,8 @@
 .app {
-  height: 100vh;
+  height: 90vh;
   &__view {
-    height: 100%;
+    overflow: auto;
+    height: 90vh;
     padding: 2rem;
   }
 }

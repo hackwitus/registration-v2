@@ -23,6 +23,12 @@
   &__form-container {
     width: 100%;
     padding: 0.5rem 5rem;
+    @media screen and (max-width: 450px) {
+      padding: 0.5rem 1.5rem !important;
+    }
+    @media screen and (min-width: 451px) and (max-width: 650px) {
+      padding: 0.5rem 2.5rem !important;
+    }
   }
 
   &__meta {
