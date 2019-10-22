@@ -1,5 +1,5 @@
-import * as React from 'react';
 import { Route } from 'react-router';
+import * as React from 'react';
 
 const PrivateRoute = ({ component: Component, path, ...rest }) => {
   const isAuthenticated = () => {

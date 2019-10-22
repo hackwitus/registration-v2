@@ -1,5 +1,5 @@
-import auth0 from 'auth0-js';
 import { AUTH_CONFIG } from './auth0-config';
+import auth0 from 'auth0-js';
 
 const auth0Client = new auth0.WebAuth(AUTH_CONFIG);
 

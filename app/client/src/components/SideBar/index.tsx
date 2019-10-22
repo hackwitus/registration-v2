@@ -1,21 +1,25 @@
+import { Sidebar as SemanticSideBar, Menu } from 'semantic-ui-react';
+import { bindActionCreators } from 'redux';
+import { connect } from 'react-redux';
 import * as React from 'react';
-import { Sidebar as SemanticSideBar, Menu, Segment, Divider } from 'semantic-ui-react';
+
 import NavLink from '../NavLink';
+import { toggleSidebar } from '../../actions/sidebarActions';
 
 interface SidebarProps {
   visible: boolean;
-  setVisible: Function;
+  toggleSidebar: () => void;
 }
 
-const Sidebar: React.FC<SidebarProps> = ({ visible, setVisible }) => {
+const Sidebar: React.FC<SidebarProps> = ({ visible, toggleSidebar }) => {
   return (
     <SemanticSideBar
       className="sidebar"
       as={Menu}
-      animation="overlay"
+      animation="push"
       icon="labeled"
       inverted
-      onHide={() => setVisible(false)}
+      onHide={() => toggleSidebar()}
       vertical
       visible={visible}
       size="large"
@@ -62,4 +66,20 @@ const Sidebar: React.FC<SidebarProps> = ({ visible, setVisible }) => {
   );
 };
 
-export default Sidebar;
+const mapStateToProps = (state: any) => ({
+  visible: state.sidebar.visible,
+});
+
+const mapDispatchToProps = (dispatch: any) => {
+  return bindActionCreators(
+    {
+      toggleSidebar,
+    },
+    dispatch
+  );
+};
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(Sidebar);

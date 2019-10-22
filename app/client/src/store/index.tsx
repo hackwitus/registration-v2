@@ -3,9 +3,10 @@ import { composeWithDevTools } from 'redux-devtools-extension';
 import { routerMiddleware } from 'connected-react-router';
 import createSagaMiddleware from '@redux-saga/core';
 import { createBrowserHistory } from 'history';
+import thunk from 'redux-thunk';
+
 import { rootReducer } from '../reducers';
 import { rootSaga } from '../sagas';
-import thunk from 'redux-thunk';
 
 export const history = createBrowserHistory();
 

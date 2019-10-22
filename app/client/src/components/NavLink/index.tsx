@@ -1,6 +1,6 @@
-import * as React from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
+import * as React from 'react';
 
 interface INavLinkProps {
   className: string;

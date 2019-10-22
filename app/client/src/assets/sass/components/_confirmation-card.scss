@@ -1,0 +1,38 @@
+.confirmation-card {
+  background: #fff;
+  box-shadow: 0 1px 2px #ccc;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+
+  &__header {
+    text-transform: uppercase;
+    letter-spacing: 0.25rem;
+    color: $color-secondary;
+  }
+
+  &__subheader {
+    text-transform: uppercase;
+    letter-spacing: 0.25rem;
+    color: $color-secondary;
+    font-size: 1.2rem;
+  }
+
+  &__form-container {
+    width: 100%;
+    padding: 0.5rem 5rem;
+  }
+
+  &__meta {
+    margin-top: 0.5rem !important;
+    color: $color-grey;
+    font-weight: 400;
+  }
+
+  &__disclaimer {
+    margin-bottom: 0 !important;
+    font-weight: bold;
+  }
+}

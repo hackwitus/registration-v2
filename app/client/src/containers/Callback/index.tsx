@@ -1,6 +1,7 @@
-import React from 'react';
-import { connect } from 'react-redux';
 import { Redirect } from 'react-router';
+import { connect } from 'react-redux';
+import React from 'react';
+
 import { handleAuthenticationCallback } from '../../actions/userActions';
 
 const Callback = ({ dispatch, user }) => {

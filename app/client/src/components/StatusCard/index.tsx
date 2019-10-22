@@ -1,5 +1,5 @@
-import * as React from 'react';
 import { Divider } from 'semantic-ui-react';
+import * as React from 'react';
 
 interface StatusCardProps {
   statusHeader: string;

@@ -1,14 +1,15 @@
-import * as React from 'react';
-import { Button, Dropdown } from 'semantic-ui-react';
 import { signIn, signOut } from '../../auth/auth0-spa';
-import logo from '../../assets/images/logo.png';
-import { connect } from 'react-redux';
+import { Button, Dropdown } from 'semantic-ui-react';
 import { bindActionCreators } from 'redux';
+import { connect } from 'react-redux';
+import * as React from 'react';
+
 import { toggleSidebar } from '../../actions/sidebarActions';
+import logo from '../../assets/images/logo.png';
 
 interface NavBarProps {
   user: any;
-  toggleSidebar: Function;
+  toggleSidebar: () => void;
 }
 
 const NavBar: React.FC<NavBarProps> = ({ user, toggleSidebar }) => {
