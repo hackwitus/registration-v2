@@ -2,15 +2,23 @@
   width: 100%;
   display: flex;
   flex-direction: row;
+  align-items: center;
   padding: 1rem 2rem;
-  border: 1px solid lime;
+  background-color: $color-black;
+  & > * {
+    color: white;
+  }
+
+  &__menu-control {
+    font-size: 2rem;
+    margin-right: 1rem;
+  }
   &__logo-container {
     height: 5rem;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-    border: 1px solid orangered;
   }
   &__logo-img {
     height: 100%;
@@ -25,13 +33,13 @@
     align-items: center;
     justify-content: flex-end;
     flex-direction: row;
-    border: 1px solid orangered;
     height: 5rem;
     padding: 0.5rem;
   }
   &__user-image {
     height: 100%;
     border-radius: 50%;
+    border: $border-default;
     margin-right: 1rem;
   }
 }
