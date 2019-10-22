@@ -3,12 +3,15 @@ import { Button, Dropdown } from 'semantic-ui-react';
 import { signIn, signOut } from '../../auth/auth0-spa';
 import logo from '../../assets/images/logo.png';
 import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
+import { toggleSidebar } from '../../actions/sidebarActions';
 
 interface NavBarProps {
   user: any;
+  toggleSidebar: Function;
 }
 
-const NavBar: React.FC<NavBarProps> = ({ user }) => {
+const NavBar: React.FC<NavBarProps> = ({ user, toggleSidebar }) => {
   const renderProfile = () => {
     if (user.authenticated) {
       return (
@@ -35,6 +38,7 @@ const NavBar: React.FC<NavBarProps> = ({ user }) => {
 
   return (
     <div className="navbar">
+      <i className="fas fa-bars navbar__menu-control" onClick={() => toggleSidebar()}></i>
       <div className="navbar__logo-container">
         <img src={logo} alt="site logo" className="navbar__logo-img" />
         <h1 className="navbar__logo-text">HackWITus Registration V2</h1>
@@ -50,4 +54,16 @@ const mapStateToProps = (state: any) => {
   };
 };
 
-export default connect(mapStateToProps)(NavBar);
+const mapDispatchToProps = (dispatch: any) => {
+  return bindActionCreators(
+    {
+      toggleSidebar,
+    },
+    dispatch
+  );
+};
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(NavBar);
