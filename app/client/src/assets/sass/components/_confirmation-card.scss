@@ -1,4 +1,4 @@
-.registration-card {
+.confirmation-card {
   background: #fff;
   box-shadow: 0 1px 2px #ccc;
   padding: 2rem;
@@ -15,6 +15,7 @@
     text-transform: uppercase;
     letter-spacing: 0.25rem;
     color: $color-secondary;
+
     @media screen and (max-width: 375px) {
       letter-spacing: 0.1rem;
       font-size: 1.5rem;
@@ -26,6 +27,7 @@
     letter-spacing: 0.25rem;
     color: $color-secondary;
     font-size: 1.2rem;
+
     @media screen and (max-width: 375px) {
       letter-spacing: 0.1rem;
       font-size: 1rem;
@@ -35,6 +37,7 @@
   &__form-container {
     width: 100%;
     padding: 0.5rem 5rem;
+
     @media screen and (max-width: 450px) {
       padding: 0.5rem 1.5rem !important;
     }
@@ -44,11 +47,13 @@
   }
 
   &__meta {
+    margin-top: 0.5rem !important;
     color: $color-grey;
     font-weight: 400;
   }
 
   &__disclaimer {
+    margin-bottom: 0 !important;
     font-weight: bold;
   }
 }

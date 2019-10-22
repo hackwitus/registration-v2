@@ -1,22 +1,24 @@
-import * as React from 'react';
-import { Button, Dropdown } from 'semantic-ui-react';
 import { signIn, signOut } from '../../auth/auth0-spa';
-import logo from '../../assets/images/logo.png';
-import { connect } from 'react-redux';
+import { Button, Dropdown, Menu, Segment, Transition } from 'semantic-ui-react';
 import { bindActionCreators } from 'redux';
+import { connect } from 'react-redux';
+import * as React from 'react';
+
 import { toggleSidebar } from '../../actions/sidebarActions';
+import logo from '../../assets/images/logo.png';
 
 interface NavBarProps {
   user: any;
-  toggleSidebar: Function;
+  visible: boolean;
+  toggleSidebar: () => void;
 }
 
-const NavBar: React.FC<NavBarProps> = ({ user, toggleSidebar }) => {
+const NavBar: React.FC<NavBarProps> = ({ user, visible, toggleSidebar }) => {
   const renderProfile = () => {
     if (user.authenticated) {
       return (
         <>
-          <img src={user.profile.picture} alt="" className="navbar__user-image" />
+          <img src={user.profile.picture} alt="" className="navbar__user-image" style={{ marginRight: '1rem' }} />
           <Dropdown text={`Hi ${user.profile.nickname}`} pointing>
             <Dropdown.Menu>
               <Dropdown.Header>User Actions</Dropdown.Header>
@@ -36,21 +38,36 @@ const NavBar: React.FC<NavBarProps> = ({ user, toggleSidebar }) => {
     }
   };
 
+  const handleToggleSidebar = (e: any) => {
+    e.preventDefault();
+    toggleSidebar();
+  };
+
   return (
-    <div className="navbar">
-      <i className="fas fa-bars navbar__menu-control" onClick={() => toggleSidebar()}></i>
-      <div className="navbar__logo-container">
-        <img src={logo} alt="site logo" className="navbar__logo-img" />
-        <h1 className="navbar__logo-text">HackWITus Registration V2</h1>
-      </div>
-      <div className="navbar__user-container">{renderProfile()}</div>
-    </div>
+    <Segment inverted style={{ borderRadius: '0', marginBottom: '0' }}>
+      <Menu inverted pointing secondary>
+        <Menu.Item>
+          <Transition visible={!visible} animation="scale" duration={200}>
+            <i className="fas fa-bars navbar__menu-control" onClick={handleToggleSidebar} />
+          </Transition>
+          <Transition visible={visible} animation="scale" duration={200}>
+            <i className="fas fa-times navbar__menu-control" onClick={handleToggleSidebar} />
+          </Transition>
+        </Menu.Item>
+        <Menu.Item>
+          <img src={logo} alt="site logo" />
+          <h1 className="navbar__logo-text">HackWITus Registration V2</h1>
+        </Menu.Item>
+        <Menu.Item position="right">{renderProfile()}</Menu.Item>
+      </Menu>
+    </Segment>
   );
 };
 
 const mapStateToProps = (state: any) => {
   return {
     user: state.user,
+    visible: state.sidebar.visible,
   };
 };
 

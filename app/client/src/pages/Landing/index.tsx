@@ -1,6 +1,7 @@
-import * as React from 'react';
-import StatusCard from '../../components/StatusCard';
 import { Container } from 'semantic-ui-react';
+import * as React from 'react';
+
+import StatusCard from '../../components/StatusCard';
 
 const Landing: React.FC = () => {
   return (

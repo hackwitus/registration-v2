@@ -1,6 +1,6 @@
-import * as React from 'react';
-import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
+import ReactDOM from 'react-dom';
+import * as React from 'react';
 
 import { configureStore } from './store';
 import './assets/sass/main.scss';

@@ -1,6 +1,7 @@
-import * as React from 'react';
 import { Form } from 'semantic-ui-react';
+import * as React from 'react';
 import uuid from 'uuid/v4';
+
 import schoolData from '../../assets/data/schools.json';
 
 const RegistrationCard: React.FC = props => {
@@ -33,18 +34,19 @@ const RegistrationCard: React.FC = props => {
       <h2 className="registration-card__subheader">Basic Information</h2>
       <div className="registration-card__form-container">
         <Form>
-          <Form.Input fluid label="Email" placeholder="Email" />
+          <Form.Input fluid label="Email" placeholder="Email" required />
           <Form.Group widths="equal">
-            <Form.Input fluid label="First Name" placeholder="First Name" />
-            <Form.Input fluid label="Last Name" placeholder="Last Name" />
+            <Form.Input fluid label="First Name" placeholder="First Name" required />
+            <Form.Input fluid label="Last Name" placeholder="Last Name" required />
           </Form.Group>
-          <Form.Dropdown label="School" fluid search selection options={parseSchools()} />
-          <Form.Dropdown label="Graduation Year" fluid selection options={graduationYears} />
-          <Form.Dropdown label="Gender" fluid selection options={genders} />
+          <Form.Dropdown label="School" fluid search selection options={parseSchools()} required />
+          <Form.Dropdown label="Graduation Year" fluid selection options={graduationYears} required />
+          <Form.Dropdown label="Gender" fluid selection options={genders} required />
           <Form.Input
             fluid
             label="I would describe myself as..."
             placeholder="Designer, Data Scientist, iOS Wizard, Hacker Extrordinare..."
+            required
           />
           <Form.TextArea label="What would you like to learn or get out of HackWITus? (optional)" />
           <p className="registration-card__meta">
@@ -55,7 +57,7 @@ const RegistrationCard: React.FC = props => {
           <p className="registration-card__disclaimer">
             We will be checking ID. If you are a non-WIT minor, you will be turned away at the door.
           </p>
-          <Form.Checkbox label="I am 18 or older" />
+          <Form.Checkbox label="I am 18 or older" required />
           <Form.Group style={{ marginTop: '2rem' }}>
             <Form.Button>Clear</Form.Button>
             <Form.Button primary type="submit">

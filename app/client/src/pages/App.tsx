@@ -1,18 +1,19 @@
-import * as React from 'react';
+import { Header, Sidebar as SemanticSideBar } from 'semantic-ui-react';
 import { ConnectedRouter } from 'connected-react-router';
 import { Switch, Route } from 'react-router';
+import { bindActionCreators } from 'redux';
+import { connect } from 'react-redux';
 import { history } from '../store';
-import { Header, Sidebar as SemanticSideBar, Segment } from 'semantic-ui-react';
+import * as React from 'react';
 
-import Landing from './Landing';
-import Navbar from '../components/NavBar';
+import { toggleSidebar } from '../actions/sidebarActions';
 import ProtectedRoute from '../components/PrivateRoute';
 import Callback from '../containers/Callback';
 import Sidebar from '../components/SideBar';
+import Navbar from '../components/NavBar';
 import Registration from './Registration';
-import { bindActionCreators } from 'redux';
-import { toggleSidebar } from '../actions/sidebarActions';
-import { connect } from 'react-redux';
+import Landing from './Landing';
+import Confirmation from './Confirmation';
 
 const App: React.FC<{ visible: boolean; toggleSidebar: Function }> = ({ visible, toggleSidebar }) => {
   return (
@@ -20,15 +21,15 @@ const App: React.FC<{ visible: boolean; toggleSidebar: Function }> = ({ visible,
       <div className="app">
         <Navbar />
         <SemanticSideBar.Pushable>
-          <Sidebar visible={visible} setVisible={toggleSidebar} />
+          <Sidebar />
           <SemanticSideBar.Pusher>
             <div className="app__view">
               <Switch>
                 <Route exact path="/" component={Landing} />
                 <Route exact path="/registration" component={Registration} />
+                <Route path="/confirmation" component={Confirmation} />
                 <Route exact path="/callback" component={Callback} />
                 <ProtectedRoute path="/protected" component={() => <Header>Hello Protection</Header>} />
-                <Route path="/confirmation" component={() => <Header>Hello Confirmation</Header>} />
                 <Route path="/admin" component={() => <Header>Hello Admin</Header>} />
               </Switch>
             </div>
