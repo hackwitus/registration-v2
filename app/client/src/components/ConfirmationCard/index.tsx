@@ -76,9 +76,7 @@ const ConfirmationCard: React.FC = props => {
             Legal
           </h2>
           <p className="confirmation-card__disclaimer">Liability Waiver</p>
-          <Form.Button as="a" href="/">
-            Liability Waiver
-          </Form.Button>
+          <a href="/">Liability Waiver</a>
           <p className="confirmation-card__meta">
             For legal reasons, our university asks that you read and accept the terms of our liability waiver. Again, as
             we mentioned in the original application - you <strong style={{ color: '#000' }}>must</strong> be 18 years
@@ -92,9 +90,7 @@ const ConfirmationCard: React.FC = props => {
           <Form.Input placeholder="Your Full Legal Name" />
 
           <p className="confirmation-card__disclaimer">Photo Release</p>
-          <Form.Button as="a" href="/">
-            Photo Release
-          </Form.Button>
+          <a href="/">Photo Release</a>
           <p className="confirmation-card__meta">
             Signing this photo release means if we take photos or photos of you, we can share it with the world.
           </p>
@@ -104,9 +100,7 @@ const ConfirmationCard: React.FC = props => {
           <Form.Input placeholder="Your Full Legal Name" />
 
           <p className="confirmation-card__disclaimer">Code of Conduct</p>
-          <Form.Button as="a" href="/">
-            Hacker Code of Conduct
-          </Form.Button>
+          <a href="/">Hacker Code of Conduct</a>
           <p className="confirmation-card__meta">
             It is extremely important to us that attendees follow a set of guidelines to make the event fun for everyone
             involved. Please read through and make sure you understand what we will be expecting of you.

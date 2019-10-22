@@ -7,9 +7,18 @@
   justify-content: space-evenly;
   align-items: center;
 
+  @media screen and (max-width: 375px) {
+    padding: 2rem 1rem !important;
+  }
+
   &__header {
     text-transform: uppercase;
     letter-spacing: 0.25rem;
+
+    @media screen and (max-width: 375px) {
+      letter-spacing: 0.1rem;
+      font-size: 1.5rem;
+    }
 
     &--incomplete {
       color: $color-dove-grey-2;
@@ -61,12 +70,21 @@
     &--declined {
       background-color: $color-danger;
     }
+
+    @media screen and (max-width: 375px) {
+      letter-spacing: 0.1rem;
+      font-size: 1rem;
+    }
   }
 
   &__message {
     font-weight: 400;
     font-size: 2rem;
     margin-bottom: 1rem;
+
+    @media screen and (max-width: 375px) {
+      font-size: 1.5rem;
+    }
   }
 
   &__key {

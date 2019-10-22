@@ -5,7 +5,7 @@ import RegistrationCard from '../../components/RegistrationCard';
 
 const Registration: React.FC = props => {
   return (
-    <Container>
+    <Container className="container">
       <RegistrationCard />
     </Container>
   );

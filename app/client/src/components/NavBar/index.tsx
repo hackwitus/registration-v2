@@ -1,5 +1,5 @@
 import { signIn, signOut } from '../../auth/auth0-spa';
-import { Button, Dropdown, Menu, Segment, Responsive } from 'semantic-ui-react';
+import { Button, Dropdown, Menu, Segment, Transition } from 'semantic-ui-react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import * as React from 'react';
@@ -9,10 +9,11 @@ import logo from '../../assets/images/logo.png';
 
 interface NavBarProps {
   user: any;
+  visible: boolean;
   toggleSidebar: () => void;
 }
 
-const NavBar: React.FC<NavBarProps> = ({ user, toggleSidebar }) => {
+const NavBar: React.FC<NavBarProps> = ({ user, visible, toggleSidebar }) => {
   const renderProfile = () => {
     if (user.authenticated) {
       return (
@@ -37,11 +38,21 @@ const NavBar: React.FC<NavBarProps> = ({ user, toggleSidebar }) => {
     }
   };
 
+  const handleToggleSidebar = (e: any) => {
+    e.preventDefault();
+    toggleSidebar();
+  };
+
   return (
     <Segment inverted style={{ borderRadius: '0', marginBottom: '0' }}>
       <Menu inverted pointing secondary>
         <Menu.Item>
-          <i className="fas fa-bars navbar__menu-control" onClick={() => toggleSidebar()}></i>
+          <Transition visible={!visible} animation="scale" duration={200}>
+            <i className="fas fa-bars navbar__menu-control" onClick={handleToggleSidebar} />
+          </Transition>
+          <Transition visible={visible} animation="scale" duration={200}>
+            <i className="fas fa-times navbar__menu-control" onClick={handleToggleSidebar} />
+          </Transition>
         </Menu.Item>
         <Menu.Item>
           <img src={logo} alt="site logo" />
@@ -56,6 +67,7 @@ const NavBar: React.FC<NavBarProps> = ({ user, toggleSidebar }) => {
 const mapStateToProps = (state: any) => {
   return {
     user: state.user,
+    visible: state.sidebar.visible,
   };
 };
 

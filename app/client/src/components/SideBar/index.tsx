@@ -19,10 +19,9 @@ const Sidebar: React.FC<SidebarProps> = ({ visible, toggleSidebar }) => {
       animation="push"
       icon="labeled"
       inverted
-      onHide={() => toggleSidebar()}
       vertical
       visible={visible}
-      size="huge"
+      size={window.innerWidth <= 375 ? 'large' : 'huge'}
     >
       <Menu.Item
         as={() => <NavLink label="Home" route="/" className="sidebar__link" activeClass="sidebar__link--active" />}

@@ -4,5 +4,9 @@
     overflow: auto;
     height: 90vh;
     padding: 2rem;
+
+    @media screen and (max-width: 375px) {
+      padding: 2rem 1rem !important;
+    }
   }
 }
