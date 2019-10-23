@@ -1,0 +1,60 @@
+{
+  "teams": [
+    {
+      "id": "22c1562d-0814-4c61-ae64-1994271f8873",
+      "team_name": "Pied Piper",
+      "accepting_members": true,
+      "project": "Building a new internet",
+      "bio": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo quam nulla obcaecati veritatis mollitia, eos, dolorum laudantium sequi itaque sed necessitatibus suscipit? Veritatis ipsa pariatur unde atque consectetur reprehenderit harum."
+    },
+    {
+      "id": "22c1562d-0814-4c61-ae63-1994271f8873",
+      "team_name": "Pied Piper",
+      "accepting_members": false,
+      "project": "Building a new internet",
+      "bio": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo quam nulla obcaecati veritatis mollitia, eos, dolorum laudantium sequi itaque sed necessitatibus suscipit? Veritatis ipsa pariatur unde atque consectetur reprehenderit harum."
+    },
+    {
+      "id": "22c1562d-0814-4a62-ae64-1994271f8873",
+      "team_name": "Pied Piper",
+      "accepting_members": true,
+      "project": "Building a new internet",
+      "bio": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo quam nulla obcaecati veritatis mollitia, eos, dolorum laudantium sequi itaque sed necessitatibus suscipit? Veritatis ipsa pariatur unde atque consectetur reprehenderit harum."
+    },
+    {
+      "id": "22c1562d-0214-4c61-ae64-1994271f8873",
+      "team_name": "Pied Piper",
+      "accepting_members": true,
+      "project": "Building a new internet",
+      "bio": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo quam nulla obcaecati veritatis mollitia, eos, dolorum laudantium sequi itaque sed necessitatibus suscipit? Veritatis ipsa pariatur unde atque consectetur reprehenderit harum."
+    },
+    {
+      "id": "22c1562d-0814-4c63-ae64-1994271f8873",
+      "team_name": "Pied Piper",
+      "accepting_members": false,
+      "project": "Building a new internet",
+      "bio": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo quam nulla obcaecati veritatis mollitia, eos, dolorum laudantium sequi itaque sed necessitatibus suscipit? Veritatis ipsa pariatur unde atque consectetur reprehenderit harum."
+    },
+    {
+      "id": "22c1562d-0714-4c61-ae64-1994271f8873",
+      "team_name": "Pied Piper",
+      "accepting_members": false,
+      "project": "Building a new internet",
+      "bio": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo quam nulla obcaecati veritatis mollitia, eos, dolorum laudantium sequi itaque sed necessitatibus suscipit? Veritatis ipsa pariatur unde atque consectetur reprehenderit harum."
+    },
+    {
+      "id": "22c1562d-0814-4c61-8e64-1994271f8873",
+      "team_name": "Pied Piper",
+      "accepting_members": true,
+      "project": "Building a new internet",
+      "bio": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo quam nulla obcaecati veritatis mollitia, eos, dolorum laudantium sequi itaque sed necessitatibus suscipit? Veritatis ipsa pariatur unde atque consectetur reprehenderit harum."
+    },
+    {
+      "id": "22c1562d-0814-4c61-ae04-1994271f8873",
+      "team_name": "Pied Piper",
+      "accepting_members": true,
+      "project": "Building a new internet",
+      "bio": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo quam nulla obcaecati veritatis mollitia, eos, dolorum laudantium sequi itaque sed necessitatibus suscipit? Veritatis ipsa pariatur unde atque consectetur reprehenderit harum."
+    }
+  ]
+}
