@@ -9,7 +9,6 @@
     "express": "^4.17.1"
   },
   "scripts": {
-    "build": "cd ./app/client && yarn install && yarn run build",
     "start": "node ./app/server"
   }
 }
