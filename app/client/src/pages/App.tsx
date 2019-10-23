@@ -14,6 +14,8 @@ import Navbar from '../components/NavBar';
 import Registration from './Registration';
 import Landing from './Landing';
 import Confirmation from './Confirmation';
+import Teams from './Teams';
+import TeamDetail from './TeamDetail';
 
 const App: React.FC<{ visible: boolean; toggleSidebar: Function }> = ({ visible, toggleSidebar }) => {
   return (
@@ -28,6 +30,8 @@ const App: React.FC<{ visible: boolean; toggleSidebar: Function }> = ({ visible,
                 <Route exact path="/" component={Landing} />
                 <Route exact path="/registration" component={Registration} />
                 <Route path="/confirmation" component={Confirmation} />
+                <Route exact path="/teams" component={Teams} />
+                <Route path="/teams/:id" component={TeamDetail} />
                 <Route exact path="/callback" component={Callback} />
                 <ProtectedRoute path="/protected" component={() => <Header>Hello Protection</Header>} />
                 <Route path="/admin" component={() => <Header>Hello Admin</Header>} />
