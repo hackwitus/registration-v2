@@ -9,7 +9,7 @@
     "express": "^4.17.1"
   },
   "scripts": {
-    "heroku:postbuild": "cd ./app/client && yarn run build",
+    "build": "cd ./app/client && yarn install && yarn run build",
     "start": "node ./app/server"
   }
 }
