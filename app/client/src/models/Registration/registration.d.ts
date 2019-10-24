@@ -25,7 +25,7 @@ export namespace Registration {
   };
 
   type SearchField<T> = {
-    result: T;
+    value: T;
     results: Object | any[];
     filteredResults: Object | any[];
   };

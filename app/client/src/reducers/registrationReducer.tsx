@@ -27,7 +27,7 @@ export const registrationReducer = (state: Registration.Registration = initialSt
           ...state.fields,
           [payload.data.name]: {
             ...state.fields[payload.data.name],
-            result: payload.data.value,
+            value: payload.data.value,
           },
         },
       };
@@ -49,7 +49,7 @@ export const registrationReducer = (state: Registration.Registration = initialSt
           ...state.fields,
           [payload.data.name]: {
             ...state.fields[payload.data.name],
-            result: payload.data.value,
+            value: payload.data.value,
             filteredResults: payload.data.filteredResults,
           },
         },

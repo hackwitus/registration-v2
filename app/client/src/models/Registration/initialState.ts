@@ -39,7 +39,7 @@ export const initialState: Registration.Registration = {
     school: {
       results: fetchSchools(),
       filteredResults: fetchSchools(),
-      result: '',
+      value: '',
     },
     graduation_year: {
       value: '',

@@ -1,23 +1,23 @@
 import { Form, InputOnChangeData, DropdownProps, TextAreaProps, CheckboxProps } from 'semantic-ui-react';
+import { bindActionCreators } from 'redux';
+import { connect } from 'react-redux';
 import * as React from 'react';
 
-import { Registration } from '../../models/Registration/registration';
-import SchoolInput from '../SchoolInput';
-import { bindActionCreators } from 'redux';
 import {
   handleInputChange,
   handleDropdownChange,
   handleTextAreaChange,
   handleCheckboxChange,
 } from '../../actions/registrationActions';
-import { connect } from 'react-redux';
+import SchoolInput from '../SchoolInput';
+import { Registration } from '../../models/Registration/registration';
 
 interface RegistrationProps {
-  fields: Registration.Fields;
-  handleInputChange: (event: React.ChangeEvent<HTMLInputElement>, data: InputOnChangeData) => void;
   handleDropdownChange: (event: React.SyntheticEvent<HTMLElement, Event>, data: DropdownProps) => void;
+  handleInputChange: (event: React.ChangeEvent<HTMLInputElement>, data: InputOnChangeData) => void;
   handleTextAreaChange: (event: React.FormEvent<HTMLTextAreaElement>, data: TextAreaProps) => void;
   handleCheckboxChange: (event: React.FormEvent<HTMLInputElement>, data: CheckboxProps) => void;
+  fields: Registration.Fields;
 }
 
 const RegistrationCard: React.FC<RegistrationProps> = ({
@@ -34,75 +34,75 @@ const RegistrationCard: React.FC<RegistrationProps> = ({
       <div className="registration-card__form-container">
         <Form>
           <Form.Input
+            onChange={handleInputChange}
+            value={fields.email.value}
             placeholder="Email"
             label="Email"
             name="email"
             required
-            onChange={handleInputChange}
-            value={fields.email.value}
           />
 
           <Form.Group widths="equal">
             <Form.Input
               fluid
-              label="First Name"
+              value={fields.first_name.value}
+              onChange={handleInputChange}
               placeholder="First Name"
+              label="First Name"
               name="first_name"
               required
-              onChange={handleInputChange}
-              value={fields.first_name.value}
             />
 
             <Form.Input
-              fluid
-              label="Last Name"
+              value={fields.last_name.value}
+              onChange={handleInputChange}
               placeholder="Last Name"
+              label="Last Name"
               name="last_name"
               required
-              onChange={handleInputChange}
-              value={fields.last_name.value}
+              fluid
             />
           </Form.Group>
 
           <SchoolInput />
 
           <Form.Dropdown
+            options={fields.graduation_year.options}
+            value={fields.graduation_year.value}
+            onChange={handleDropdownChange}
             label="Graduation Year"
-            fluid
+            name="graduation_year"
             selection
             required
-            name="graduation_year"
-            options={fields.graduation_year.options}
-            onChange={handleDropdownChange}
-            value={fields.graduation_year.value}
+            fluid
           />
 
           <Form.Dropdown
-            label="Gender"
-            fluid
-            selection
-            options={fields.gender.options}
-            required
-            name="gender"
-            value={fields.gender.value}
             onChange={handleDropdownChange}
+            options={fields.gender.options}
+            value={fields.gender.value}
+            label="Gender"
+            name="gender"
+            selection
+            required
+            fluid
           />
 
           <Form.Input
-            fluid
-            label="I would describe myself as..."
             placeholder="Designer, Data Scientist, iOS Wizard, Hacker Extrordinare..."
-            required
-            name="description"
+            label="I would describe myself as..."
             value={fields.description.value}
             onChange={handleInputChange}
+            name="description"
+            required
+            fluid
           />
 
           <Form.TextArea
             label="What would you like to learn or get out of HackWITus? (optional)"
-            name="learning_goals"
-            onChange={handleTextAreaChange}
             value={fields.learning_goals.value}
+            onChange={handleTextAreaChange}
+            name="learning_goals"
           />
 
           <p className="registration-card__meta">
@@ -114,11 +114,11 @@ const RegistrationCard: React.FC<RegistrationProps> = ({
             We will be checking ID. If you are a non-WIT minor, you will be turned away at the door.
           </p>
           <Form.Checkbox
-            label="I am 18 or older"
-            required
-            name="is_adult"
             onChange={handleCheckboxChange}
             checked={fields.is_adult.value}
+            label="I am 18 or older"
+            name="is_adult"
+            required
           />
 
           <Form.Group style={{ marginTop: '2rem' }}>
