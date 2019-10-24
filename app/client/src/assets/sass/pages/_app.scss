@@ -1,8 +1,7 @@
 .app {
-  height: 90vh;
+  height: 100vh;
+  overflow-y: auto;
   &__view {
-    overflow: auto;
-    height: 90vh;
     padding: 2rem;
 
     @media screen and (max-width: 375px) {
