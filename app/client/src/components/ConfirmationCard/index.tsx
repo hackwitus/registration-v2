@@ -66,7 +66,6 @@ const ConfirmationCard: React.FC = props => {
           />
           <Form.Input fluid label="GitHub" placeholder="https://github.com/foobar" />
           <Form.Input fluid label="Twitter" placeholder="https://twitter.com/foobar" />
-          <Form.TextArea label="What would you like to learn or get out of HackWITus? (optional)" />
           <p className="confirmation-card__disclaimer">Skill Sheet</p>
           <p className="confirmation-card__meta">
             Upload a document outlining any skills or experience you'd like to share (ex. resume). PDF preferred!
