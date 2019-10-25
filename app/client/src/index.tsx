@@ -1,3 +1,4 @@
+import * as serviceWorker from './serviceWorker';
 import { Provider } from 'react-redux';
 import ReactDOM from 'react-dom';
 import * as React from 'react';
@@ -14,3 +15,5 @@ ReactDOM.render(
   </Provider>,
   document.querySelector('#root')
 );
+
+serviceWorker.register();

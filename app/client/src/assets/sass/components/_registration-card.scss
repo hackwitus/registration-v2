@@ -43,6 +43,13 @@
     }
   }
 
+  &__search {
+    & > div {
+      width: 100% !important;
+      margin: 0 0 1rem 0;
+    }
+  }
+
   &__meta {
     color: $color-grey;
     font-weight: 400;
@@ -51,4 +58,18 @@
   &__disclaimer {
     font-weight: bold;
   }
+}
+
+.required {
+  // position: relative;
+}
+
+p.required::after {
+  margin: -0.2em 0 0 0.2em;
+  content: '*';
+  color: #db2828;
+}
+
+.results.transition.visible {
+  margin-top: -0.8rem !important;
 }
