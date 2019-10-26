@@ -8,6 +8,7 @@ import {
   handleDropdownChange,
   handleTextAreaChange,
   handleCheckboxChange,
+  initializeFromAuth,
 } from '../../actions/registrationActions';
 import SchoolInput from '../SchoolInput';
 import { Registration } from '../../models/Registration/registration';
@@ -17,6 +18,8 @@ interface RegistrationProps {
   handleInputChange: (event: React.ChangeEvent<HTMLInputElement>, data: InputOnChangeData) => void;
   handleTextAreaChange: (event: React.FormEvent<HTMLTextAreaElement>, data: TextAreaProps) => void;
   handleCheckboxChange: (event: React.FormEvent<HTMLInputElement>, data: CheckboxProps) => void;
+  initializeFromAuth: (field: string, value: string) => void;
+  user: any;
   fields: Registration.Fields;
 }
 
@@ -26,7 +29,15 @@ const RegistrationCard: React.FC<RegistrationProps> = ({
   handleDropdownChange,
   handleTextAreaChange,
   handleCheckboxChange,
+  initializeFromAuth,
+  user,
 }) => {
+  React.useEffect(() => {
+    if (user && user.email && user.email !== fields.email) {
+      initializeFromAuth('email', user.email);
+    }
+    // eslint-disable-next-line
+  }, [user]);
   return (
     <div className="registration-card">
       <h1 className="registration-card__header">Application</h1>
@@ -135,6 +146,7 @@ const RegistrationCard: React.FC<RegistrationProps> = ({
 
 const mapStateToProps = (state: any) => ({
   fields: state.registration.fields,
+  user: state.user.profile,
 });
 
 const mapDispatchToProps = (dispatch: any) => {
@@ -144,6 +156,7 @@ const mapDispatchToProps = (dispatch: any) => {
       handleDropdownChange,
       handleTextAreaChange,
       handleCheckboxChange,
+      initializeFromAuth,
     },
     dispatch
   );

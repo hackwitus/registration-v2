@@ -1,5 +1,7 @@
+import { Button, Dropdown, Menu, Segment, Sticky } from 'semantic-ui-react';
+import '@animated-burgers/burger-rotate/dist/styles.css';
 import { signIn, signOut } from '../../auth/auth0-spa';
-import { Button, Dropdown, Menu, Segment, Transition } from 'semantic-ui-react';
+import Burger from '@animated-burgers/burger-rotate';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import * as React from 'react';
@@ -17,7 +19,7 @@ const NavBar: React.FC<NavBarProps> = ({ user, visible, toggleSidebar }) => {
   const renderProfile = () => {
     if (user.authenticated) {
       return (
-        <>
+        <Menu.Item>
           <img src={user.profile.picture} alt="" className="navbar__user-image" style={{ marginRight: '1rem' }} />
           <Dropdown text={`Hi ${user.profile.nickname}`} pointing>
             <Dropdown.Menu>
@@ -25,15 +27,15 @@ const NavBar: React.FC<NavBarProps> = ({ user, visible, toggleSidebar }) => {
               <Dropdown.Item onClick={() => signOut()}>Log Out</Dropdown.Item>
             </Dropdown.Menu>
           </Dropdown>
-        </>
+        </Menu.Item>
       );
     } else {
       return (
-        <>
-          <Button primary onClick={() => signIn()} size="big">
+        <Menu.Item style={{ height: '100%' }}>
+          <Button primary onClick={() => signIn()}>
             Sign In
           </Button>
-        </>
+        </Menu.Item>
       );
     }
   };
@@ -44,23 +46,20 @@ const NavBar: React.FC<NavBarProps> = ({ user, visible, toggleSidebar }) => {
   };
 
   return (
-    <Segment inverted style={{ borderRadius: '0', marginBottom: '0' }}>
-      <Menu inverted pointing secondary>
-        <Menu.Item>
-          <Transition visible={!visible} animation="scale" duration={200}>
-            <i className="fas fa-bars navbar__menu-control" onClick={handleToggleSidebar} />
-          </Transition>
-          <Transition visible={visible} animation="scale" duration={200}>
-            <i className="fas fa-times navbar__menu-control" onClick={handleToggleSidebar} />
-          </Transition>
-        </Menu.Item>
-        <Menu.Item>
-          <img src={logo} alt="site logo" />
-          <h1 className="navbar__logo-text">HackWITus Registration V2</h1>
-        </Menu.Item>
-        <Menu.Item position="right">{renderProfile()}</Menu.Item>
-      </Menu>
-    </Segment>
+    <Sticky>
+      <Segment inverted style={{ borderRadius: '0', marginBottom: '0' }}>
+        <Menu inverted pointing secondary>
+          <Menu.Item>
+            <Burger isOpen={visible} onClick={handleToggleSidebar} />
+          </Menu.Item>
+          <Menu.Item>
+            <img src={logo} alt="site logo" />
+            <h1 className="navbar__logo-text">HackWITus Registration V2</h1>
+          </Menu.Item>
+          <Menu.Menu position="right">{renderProfile()}</Menu.Menu>
+        </Menu>
+      </Segment>
+    </Sticky>
   );
 };
 

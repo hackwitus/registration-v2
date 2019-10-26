@@ -34,3 +34,15 @@ export const handleCheckboxChange = (event: React.FormEvent<HTMLInputElement>, d
     },
   };
 };
+
+export const initializeFromAuth = (field: string, value: string) => {
+  return {
+    type: REGISTRATION_HANDLE_CHANGE,
+    payload: {
+      data: {
+        name: field,
+        value,
+      },
+    },
+  };
+};
