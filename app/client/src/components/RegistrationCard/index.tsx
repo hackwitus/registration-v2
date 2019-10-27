@@ -14,10 +14,10 @@ import SchoolInput from '../SchoolInput';
 import { Registration } from '../../models/Registration/registration';
 
 interface RegistrationProps {
-  handleDropdownChange: (event: React.SyntheticEvent<HTMLElement, Event>, data: DropdownProps) => void;
-  handleInputChange: (event: React.ChangeEvent<HTMLInputElement>, data: InputOnChangeData) => void;
-  handleTextAreaChange: (event: React.FormEvent<HTMLTextAreaElement>, data: TextAreaProps) => void;
-  handleCheckboxChange: (event: React.FormEvent<HTMLInputElement>, data: CheckboxProps) => void;
+  handleDropdownChange: (_: React.SyntheticEvent<HTMLElement, Event>, data: DropdownProps) => void;
+  handleInputChange: (_: React.ChangeEvent<HTMLInputElement>, data: InputOnChangeData) => void;
+  handleTextAreaChange: (_: React.FormEvent<HTMLTextAreaElement>, data: TextAreaProps) => void;
+  handleCheckboxChange: (_: React.FormEvent<HTMLInputElement>, data: CheckboxProps) => void;
   initializeFromAuth: (field: string, value: string) => void;
   user: any;
   fields: Registration.Fields;
