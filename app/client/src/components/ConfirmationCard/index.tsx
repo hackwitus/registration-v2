@@ -1,4 +1,12 @@
-import { Form, InputOnChangeData, DropdownProps, CheckboxProps, Transition } from 'semantic-ui-react';
+import {
+  Form,
+  InputOnChangeData,
+  DropdownProps,
+  CheckboxProps,
+  Transition,
+  TextAreaProps,
+  TextArea,
+} from 'semantic-ui-react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import * as React from 'react';
@@ -8,6 +16,7 @@ import {
   handleDropdownChange,
   handleCheckboxChange,
   handleFoodRestrictionChange,
+  handleTextAreaChange,
 } from '../../actions/confirmationActions';
 import { shirt_sizes } from '../../models/Confirmation/initialState';
 import { Confirmation } from '../../models/Confirmation/confirmation';
@@ -18,6 +27,7 @@ interface ConfirmationProps {
   handleDropdownChange: (_: React.SyntheticEvent<HTMLElement, Event>, data: DropdownProps) => void;
   handleCheckboxChange: (_: React.FormEvent<HTMLInputElement>, data: CheckboxProps) => void;
   handleFoodRestrictionChange: (_: React.FormEvent<HTMLInputElement>, data: CheckboxProps) => void;
+  handleTextAreaChange: (_: React.FormEvent<HTMLTextAreaElement>, data: TextAreaProps) => void;
 }
 
 const ConfirmationCard: React.FC<ConfirmationProps> = ({
@@ -26,6 +36,7 @@ const ConfirmationCard: React.FC<ConfirmationProps> = ({
   handleDropdownChange,
   handleCheckboxChange,
   handleFoodRestrictionChange,
+  handleTextAreaChange,
 }) => {
   return (
     <div className="confirmation-card">
@@ -204,7 +215,12 @@ const ConfirmationCard: React.FC<ConfirmationProps> = ({
           </h2>
           <p className="confirmation-card__disclaimer">Additional Notes</p>
           <p className="confirmation-card__meta">If there's anything else you need to let us know, tell us here!</p>
-          <Form.TextArea />
+          <Form.Field
+            as={TextArea}
+            name="additional_notes"
+            value={fields.additional_notes.value}
+            onChange={handleTextAreaChange}
+          />
           <Form.Group style={{ marginTop: '2rem' }}>
             <Form.Button>Clear</Form.Button>
             <Form.Button primary type="submit">
@@ -228,6 +244,7 @@ const mapDispatchToProps = (dispatch: any) => {
       handleDropdownChange,
       handleCheckboxChange,
       handleFoodRestrictionChange,
+      handleTextAreaChange,
     },
     dispatch
   );

@@ -1,4 +1,4 @@
-import { InputOnChangeData, DropdownProps, CheckboxProps } from 'semantic-ui-react';
+import { InputOnChangeData, DropdownProps, CheckboxProps, TextAreaProps } from 'semantic-ui-react';
 
 export const CONFIRMATION_HANDLE_CHANGE = 'CONFIRMATION_HANDLE_CHANGE';
 export const CONFIRMATION_FOOD_RESTRICTION_CHANGE = 'CONFIRMATION_FOOD_RESTRICTION_CHANGE';
@@ -38,5 +38,12 @@ export const handleFoodRestrictionChange = (_: React.FormEvent<HTMLInputElement>
         value: data.checked,
       },
     },
+  };
+};
+
+export const handleTextAreaChange = (_: React.FormEvent<HTMLTextAreaElement>, data: TextAreaProps) => {
+  return {
+    type: CONFIRMATION_HANDLE_CHANGE,
+    payload: { data },
   };
 };
