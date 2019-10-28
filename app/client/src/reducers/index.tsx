@@ -3,6 +3,7 @@ import { connectRouter } from 'connected-react-router';
 import { userReducer } from './userReducer';
 import { sidebarReducer } from './sidebarReducer';
 import { registrationReducer } from './registrationReducer';
+import { confirmationReducer } from './confirmationReducer';
 
 export const rootReducer = (history: any) =>
   combineReducers({
@@ -10,4 +11,5 @@ export const rootReducer = (history: any) =>
     user: userReducer as any,
     sidebar: sidebarReducer as any,
     registration: registrationReducer as any,
+    confirmation: confirmationReducer as any,
   });

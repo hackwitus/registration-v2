@@ -14,7 +14,7 @@ export namespace Confirmation {
     };
     shirt_size: DropdownField<shirtSizes>;
     needs_hardware: Field<boolean>;
-    hardware_needed?: Field<string>;
+    hardware_needed: Field<string>;
     major: Field<string>;
     github: Field<string>;
     twitter: Field<string>;
@@ -56,6 +56,7 @@ export namespace Confirmation {
   type dietaryRestrictions = 'vegetarian' | 'vegan' | 'halal' | 'kosher' | 'nut_allergy';
 
   type shirtSizes =
+    | ''
     | 'Unisex X-Small'
     | 'Unisex Small'
     | 'Unisex Medium'

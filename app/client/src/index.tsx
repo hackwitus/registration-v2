@@ -7,7 +7,7 @@ import { configureStore } from './store';
 import './assets/sass/main.scss';
 import App from './pages/App';
 
-const store = configureStore();
+export const store = configureStore();
 
 ReactDOM.render(
   <Provider store={store}>

@@ -1,11 +1,22 @@
 .app {
   height: 100vh;
-  overflow-y: auto;
   &__view {
-    padding: 2rem;
+    height: 100vh;
+    overflow: auto;
 
+    padding: 2rem;
     @media screen and (max-width: 375px) {
       padding: 2rem 1rem !important;
     }
   }
+}
+
+.pushable {
+  height: 100vh !important;
+  width: 100vw !important;
+}
+
+.sidebar.menu {
+  height: 100vh;
+  overflow: none;
 }

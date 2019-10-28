@@ -4,18 +4,19 @@ import { connect } from 'react-redux';
 import * as React from 'react';
 
 import NavLink from '../NavLink';
-import { toggleSidebar } from '../../actions/sidebarActions';
+import { blurSidebar } from '../../actions/sidebarActions';
 
 interface SidebarProps {
   visible: boolean;
-  toggleSidebar: () => void;
+  blurSidebar: () => void;
 }
 
-const Sidebar: React.FC<SidebarProps> = ({ visible, toggleSidebar }) => {
+const Sidebar: React.FC<SidebarProps> = ({ visible, blurSidebar }) => {
   return (
     <SemanticSideBar
       className="sidebar"
       as={Menu}
+      onHide={blurSidebar}
       animation="push"
       icon="labeled"
       inverted
@@ -72,7 +73,7 @@ const mapStateToProps = (state: any) => ({
 const mapDispatchToProps = (dispatch: any) => {
   return bindActionCreators(
     {
-      toggleSidebar,
+      blurSidebar,
     },
     dispatch
   );
