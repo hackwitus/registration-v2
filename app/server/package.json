@@ -9,9 +9,9 @@
     "build": "nest build",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
     "start": "nest start",
-    "start:dev": "nest start --watch",
-    "start:debug": "nest start --debug --watch",
-    "start:prod": "node dist/main",
+    "start:dev": "export NODE_ENV=DEVELOPMENT && nest start --watch",
+    "start:debug": "export NODE_ENV=DEBUG && nest start --debug --watch",
+    "start:prod": "export NODE_ENV=PRODUCTION && node dist/main",
     "lint": "tslint -p tsconfig.json -c tslint.json",
     "test": "jest",
     "test:watch": "jest --watch",
@@ -25,7 +25,8 @@
     "@nestjs/platform-express": "^6.7.2",
     "reflect-metadata": "^0.1.13",
     "rimraf": "^3.0.0",
-    "rxjs": "^6.5.3"
+    "rxjs": "^6.5.3",
+    "uuid": "^3.3.3"
   },
   "devDependencies": {
     "@nestjs/cli": "^6.9.0",
