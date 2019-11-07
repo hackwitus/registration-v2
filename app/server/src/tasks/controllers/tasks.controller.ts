@@ -9,11 +9,10 @@ import {
   Query,
   UsePipes,
   ValidationPipe,
-  HttpStatus,
   HttpCode,
 } from '@nestjs/common';
 import { TasksService } from '../services/tasks.service';
-import { Task, TaskStatus } from '../models/task.model';
+import { Task, TaskStatus } from '../../database/models/task.interface';
 import { CreateTaskDto } from '../dto/create-task.dto';
 import { GetTasksFilterDto } from '../dto/get-tasks-filter.dto';
 import { TaskStatusValidationPipe } from '../pipes/task-status-validation.pipe';

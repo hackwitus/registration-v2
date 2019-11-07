@@ -1,12 +1,12 @@
 import { Module } from '@nestjs/common';
 import { TasksController } from './controllers/tasks.controller';
 import { TasksService } from './services/tasks.service';
-import { MongooseModule } from '@nestjs/mongoose';
-import { TaskSchema } from './models/task.model';
+import { DatabaseModule } from '../database/database.module';
+import { tasksProviders } from '../database/providers/tasks.providers';
 
 @Module({
-  imports: [MongooseModule.forFeature([{ name: 'Task', schema: TaskSchema }])],
+  imports: [DatabaseModule],
   controllers: [TasksController],
-  providers: [TasksService],
+  providers: [TasksService, ...tasksProviders],
 })
 export class TasksModule {}

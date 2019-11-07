@@ -1,17 +1,14 @@
-import { Injectable, NotFoundException } from '@nestjs/common';
-import { InjectModel } from '@nestjs/mongoose';
+import { Injectable, NotFoundException, Inject } from '@nestjs/common';
 import { Model } from 'mongoose';
 import * as uuid from 'uuid/v1';
 
 import { GetTasksFilterDto } from '../dto/get-tasks-filter.dto';
-import { Task, TaskStatus } from '../models/task.model';
+import { Task, TaskStatus } from '../../database/models/task.interface';
 import { CreateTaskDto } from '../dto/create-task.dto';
 
 @Injectable()
 export class TasksService {
-  private tasks: Task[] = [];
-
-  constructor(@InjectModel('Task') private readonly taskModel: Model<Task>) {}
+  constructor(@Inject('TASK_MODEL') private readonly taskModel: Model<Task>) {}
 
   async getAllTasks(): Promise<Task[]> {
     return await this.taskModel.find();
@@ -56,7 +53,7 @@ export class TasksService {
     return await newTask.save();
   }
 
-  async deleteTaskById(id: string): Promise<void> {
+  async deleteTaskById(id: string) {
     const found = await this.getTaskById(id);
     return await this.taskModel.findByIdAndRemove(found.id);
   }

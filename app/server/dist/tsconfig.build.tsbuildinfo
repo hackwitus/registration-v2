@@ -1105,41 +1105,21 @@
         "version": "e0e01013f40a172c13d53c88ce2695741df27852da7ede9e2e336c86c43c8ec5",
         "signature": "e0e01013f40a172c13d53c88ce2695741df27852da7ede9e2e336c86c43c8ec5"
       },
-      "../node_modules/@nestjs/mongoose/dist/common/mongoose.decorators.d.ts": {
-        "version": "120fe6ff3f553b3d2a0e065b6fea421698be40a802273652871273338085873c",
-        "signature": "120fe6ff3f553b3d2a0e065b6fea421698be40a802273652871273338085873c"
+      "../node_modules/@types/bson/index.d.ts": {
+        "version": "64118c8a43189b10dfe9d96a9478bcf7cd5b01c9d0f7838ee1454ece8a687253",
+        "signature": "64118c8a43189b10dfe9d96a9478bcf7cd5b01c9d0f7838ee1454ece8a687253"
       },
-      "../node_modules/@nestjs/mongoose/dist/common/mongoose.utils.d.ts": {
-        "version": "94f798f2ee81af6b0767403ef94fbc6d7d7a5e2dc0953a2ea3de98f2cab587c2",
-        "signature": "94f798f2ee81af6b0767403ef94fbc6d7d7a5e2dc0953a2ea3de98f2cab587c2"
+      "../node_modules/@types/mongodb/index.d.ts": {
+        "version": "755228780583fdfccbb6f663c8b96b5d7efe3fa7071deee0c00632070f294867",
+        "signature": "755228780583fdfccbb6f663c8b96b5d7efe3fa7071deee0c00632070f294867"
       },
-      "../node_modules/@nestjs/mongoose/dist/common/index.d.ts": {
-        "version": "23dbd21c1fe8ee7c2e1b260de8610d1ce67a785cd40d349520306c8d876385c4",
-        "signature": "23dbd21c1fe8ee7c2e1b260de8610d1ce67a785cd40d349520306c8d876385c4"
+      "../node_modules/@types/mongoose/index.d.ts": {
+        "version": "7b68c0da13a1295b7b0c49497d73a122134169d9b17353ebfaf9285dbfcadba0",
+        "signature": "7b68c0da13a1295b7b0c49497d73a122134169d9b17353ebfaf9285dbfcadba0"
       },
-      "../node_modules/@nestjs/mongoose/dist/interfaces/mongoose-options.interface.d.ts": {
-        "version": "bea1e44197be52c026ebffdc129afc6cac229b9ec6a86ab3ebdc07bec77ebe23",
-        "signature": "bea1e44197be52c026ebffdc129afc6cac229b9ec6a86ab3ebdc07bec77ebe23"
-      },
-      "../node_modules/@nestjs/mongoose/dist/interfaces/index.d.ts": {
-        "version": "69c9dd7f908cc12704299ad7ab4b667692800279d4df885ec9793f0317234b57",
-        "signature": "69c9dd7f908cc12704299ad7ab4b667692800279d4df885ec9793f0317234b57"
-      },
-      "../node_modules/@nestjs/mongoose/dist/mongoose.module.d.ts": {
-        "version": "729bc6ae2f8b0a4f973660582b6fca33247e82733ea44162dfc98cfae6f81059",
-        "signature": "729bc6ae2f8b0a4f973660582b6fca33247e82733ea44162dfc98cfae6f81059"
-      },
-      "../node_modules/@nestjs/mongoose/dist/index.d.ts": {
-        "version": "1566c3bf94fd979425350fd0d2dd2e814c9399c7217f58186467c548f7711e58",
-        "signature": "1566c3bf94fd979425350fd0d2dd2e814c9399c7217f58186467c548f7711e58"
-      },
-      "../node_modules/@nestjs/mongoose/index.d.ts": {
-        "version": "8f1241f5d9f0d3d72117768b3c974e462840fbd85026fb66685078945404cf2f",
-        "signature": "8f1241f5d9f0d3d72117768b3c974e462840fbd85026fb66685078945404cf2f"
-      },
-      "../src/tasks/models/task.model.ts": {
-        "version": "71e2b81abd8c6960cf978c7e40cc02a94d12dc0f9a124cbec9a32e964f39613c",
-        "signature": "367307e50956e97b64839849ffc8ceaf5cd7439ad06cb05310440e8238c0dbe5"
+      "../src/database/models/task.interface.ts": {
+        "version": "245be1553b8b5cf3b048f42eee64f64a4b27b7a603898e1d1a35a788319bca14",
+        "signature": "743b90aed4a6d546d88c3d0f60d304364d2cb1f9ad24955bcac8d1a210899a66"
       },
       "../node_modules/class-validator/validation/validationerror.d.ts": {
         "version": "8b5ad058f8dab857050fdbb092b9f1267d22641f0f746cd8a7abee85b48bb83a",
@@ -1214,31 +1194,47 @@
         "signature": "70aecfd981af29d74ba7ab6667b9cc2a53459d8eb099c139fd2aa54c3059c71d"
       },
       "../src/tasks/dto/get-tasks-filter.dto.ts": {
-        "version": "2737119329c7472717518c800c2554dbd583acb3def02d2781a2c34272e6cf82",
-        "signature": "65c81dff2b43c74f08619eff20824854f86ae9814a11d75b8df9f8c07e33f5cc"
+        "version": "1884ea567cab7b418e3865ed1ce76075d1714c71b6b9686ecaf53ece1cde6d60",
+        "signature": "a926d402fe27f1531dbdcbd2a0cc165a78e2b0732900c5ce8a4135ee06539213"
       },
       "../src/tasks/dto/create-task.dto.ts": {
         "version": "4d558c0fc3e9d66dd760fea51ad31f27f408c5ea82237922618cdeb63b1b467e",
         "signature": "b1d26f03607e121c7317f85d8725d2562ea98694c85f768a3db85be2488756e3"
       },
       "../src/tasks/services/tasks.service.ts": {
-        "version": "d26181d332010650b5412171eb649117c10905ac0222433b31bd79cfc3043fca",
-        "signature": "46506f48551da66536ac8f582922e658cbb6a7fa8f4ef5f168752d3e2f28e45d"
+        "version": "9d705f050cf69c5080f7044b369b661770d1c5536f8d48eba632ace6b43bf58c",
+        "signature": "ae269547026ed2f20475502153dd3982d7f1f93d6bfdce2530a9bd58fdb05c10"
       },
       "../src/tasks/pipes/task-status-validation.pipe.ts": {
-        "version": "69d8188966d65b65ccc1ecf2c66c42ee5af0f25b97ce36949a478679e1ea7c07",
-        "signature": "200d2288c457877c4ba49b13d3575dfd20f458502b0054c6681cce2e0ca7408a"
+        "version": "959f4c32c7771f9259709e58b6e432b32a2e0076830de63cbe085cd0278dc4d3",
+        "signature": "1ded1934b1c96743e971ebc18e520bc3b3e3221d354ff482a8059af7bc82c7b9"
       },
       "../src/tasks/controllers/tasks.controller.ts": {
-        "version": "9500227e74e815255ed6bebf306e6d8997b4a8532076637f5d8f6fc62eeae52b",
-        "signature": "5fc665b02c6633a7c027fb5e2918384d2e9627636ad6240850ff3a2066d9d76e"
+        "version": "3ce09207d1dc281c6e578a160103831eedc5611a41958a1a6ec825381a6d40ea",
+        "signature": "2b11f1596cf2df28255d9b212ecf6424b07a51c7d3688f59a085a567751e044d"
+      },
+      "../src/database/providers/database.providers.ts": {
+        "version": "f1f4e8f7b665a2befb04580c469f6c1ab0f08e6d91d4ecf1c543e2d3726ed783",
+        "signature": "08a13f6803cbeee663513880df5fa63f43209915ffdbf726d1b28922092149fd"
+      },
+      "../src/database/database.module.ts": {
+        "version": "f3a2c7c5f23799ed5c4b48a4fbc390c74f2750ed5beae440e76c18a25ce2a816",
+        "signature": "a7ad670f373dd5665c73c7dc09a8e28b976a63bd7ed08def7c1c13456e87d3dc"
+      },
+      "../src/database/schemas/tasks.schema.ts": {
+        "version": "0cfb248bd9f76a90dcddddd1070ba16abb33e34308629198b6bb046c85dcd3c2",
+        "signature": "a37e702a2705a94514c3c2fd265a9ebf85a75abc724d5d9556d266693807d929"
+      },
+      "../src/database/providers/tasks.providers.ts": {
+        "version": "9173585cfc875169d36ba6529f36f10b1f1212039ee786489208f946a93c440b",
+        "signature": "960e24494d77972af8ce3e1a6af9edc05faa9e39eccaf71db42843a541078c00"
       },
       "../src/tasks/tasks.module.ts": {
-        "version": "6a03a46153ab57a840b01a783f7094e148b7dd1e88096ffc434b9e9018e1b516",
+        "version": "36e7e1977b2a6f4a1a142a5f07d694dc619e16b5c0c61583c05dd73b7a1741b2",
         "signature": "957753c3d8b7f5d76f3b7dcceab5c1f0b308580c6b4e2819f77518edb37b6c5f"
       },
       "../src/app.module.ts": {
-        "version": "84830250c5c7c282a47cd63fcda1688b1252bf6058592b7ea1e9212f679ed5d1",
+        "version": "fc60c1ffd4d957a8f773ab5ad3dd933a56f811e02cce6024eeadb719e3ecf90f",
         "signature": "b82491e2990291580288c5602d4c017238977749d52b17391f0e45d9a29be644"
       },
       "../node_modules/@nestjs/core/adapters/http-adapter.d.ts": {
@@ -1357,9 +1353,21 @@
         "version": "2608cfd623840916e664e68c3dc5eb4347ccae822f808d899bf00e73cbab2bfe",
         "signature": "2608cfd623840916e664e68c3dc5eb4347ccae822f808d899bf00e73cbab2bfe"
       },
+      "../node_modules/chalk/types/index.d.ts": {
+        "version": "091f417275a51ab3c47b949723e9e8a193012157ecc64a96e2d7b1505e82f395",
+        "signature": "091f417275a51ab3c47b949723e9e8a193012157ecc64a96e2d7b1505e82f395"
+      },
+      "../node_modules/dotenv/types/index.d.ts": {
+        "version": "c9ae0b351a07b52f29a28e869d8c7c8d29743bbb5eeddc7c0b5b2a69a2450528",
+        "signature": "c9ae0b351a07b52f29a28e869d8c7c8d29743bbb5eeddc7c0b5b2a69a2450528"
+      },
       "../src/main.ts": {
-        "version": "3b5b3a66bb016fec7480ce95688865376f1d0565d92f9a15d0f75ff4eaf7edfe",
+        "version": "c910ea20014ef361ebd3e129c3e471a83d7cf706c366e8b3bf97223ebdc90edb",
         "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881"
+      },
+      "../src/middlewares/auth.middleware.ts": {
+        "version": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "signature": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
       },
       "../node_modules/@types/anymatch/index.d.ts": {
         "version": "48b52264fa193879a074197839dbb4796fa07e86350ff888e5361e06aa46df76",
@@ -3697,67 +3705,37 @@
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "../node_modules/@nestjs/mongoose/dist/common/mongoose.decorators.d.ts": [
+      "../node_modules/@types/bson/index.d.ts": [
+        "../node_modules/@types/node/ts3.2/index.d.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "../node_modules/@nestjs/mongoose/dist/common/mongoose.utils.d.ts": [
-        "../node_modules/rxjs/index.d.ts",
+      "../node_modules/@types/mongodb/index.d.ts": [
+        "../node_modules/@types/bson/index.d.ts",
+        "../node_modules/@types/node/events.d.ts",
+        "../node_modules/@types/node/stream.d.ts",
+        "../node_modules/@types/node/tls.d.ts",
+        "../node_modules/@types/node/ts3.2/index.d.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "../node_modules/@nestjs/mongoose/dist/common/index.d.ts": [
-        "../node_modules/@nestjs/mongoose/dist/common/mongoose.decorators.d.ts",
-        "../node_modules/@nestjs/mongoose/dist/common/mongoose.utils.d.ts",
+      "../node_modules/@types/mongoose/index.d.ts": [
+        "../node_modules/@types/node/events.d.ts",
+        "../node_modules/@types/mongodb/index.d.ts",
+        "../node_modules/@types/node/stream.d.ts",
+        "../node_modules/@types/mongoose/index.d.ts",
+        "../node_modules/@types/node/ts3.2/index.d.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "../node_modules/@nestjs/mongoose/dist/interfaces/mongoose-options.interface.d.ts": [
-        "../node_modules/@nestjs/common/index.d.ts",
-        "../node_modules/@nestjs/common/interfaces/index.d.ts",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "../node_modules/@nestjs/mongoose/dist/interfaces/index.d.ts": [
-        "../node_modules/@nestjs/mongoose/dist/interfaces/mongoose-options.interface.d.ts",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "../node_modules/@nestjs/mongoose/dist/mongoose.module.d.ts": [
-        "../node_modules/@nestjs/common/index.d.ts",
-        "../node_modules/@nestjs/mongoose/dist/interfaces/mongoose-options.interface.d.ts",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "../node_modules/@nestjs/mongoose/dist/index.d.ts": [
-        "../node_modules/@nestjs/mongoose/dist/common/index.d.ts",
-        "../node_modules/@nestjs/mongoose/dist/interfaces/index.d.ts",
-        "../node_modules/@nestjs/mongoose/dist/mongoose.module.d.ts",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "../node_modules/@nestjs/mongoose/index.d.ts": [
-        "../node_modules/@nestjs/mongoose/dist/index.d.ts",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "../src/tasks/models/task.model.ts": [
+      "../src/database/models/task.interface.ts": [
+        "../node_modules/@types/mongoose/index.d.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -3905,7 +3883,7 @@
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
       "../src/tasks/dto/get-tasks-filter.dto.ts": [
-        "../src/tasks/models/task.model.ts",
+        "../src/database/models/task.interface.ts",
         "../node_modules/class-validator/index.d.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
@@ -3921,9 +3899,9 @@
       ],
       "../src/tasks/services/tasks.service.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
-        "../node_modules/@nestjs/mongoose/index.d.ts",
+        "../node_modules/@types/mongoose/index.d.ts",
         "../src/tasks/dto/get-tasks-filter.dto.ts",
-        "../src/tasks/models/task.model.ts",
+        "../src/database/models/task.interface.ts",
         "../src/tasks/dto/create-task.dto.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
@@ -3932,7 +3910,7 @@
       ],
       "../src/tasks/pipes/task-status-validation.pipe.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
-        "../src/tasks/models/task.model.ts",
+        "../src/database/models/task.interface.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -3941,10 +3919,41 @@
       "../src/tasks/controllers/tasks.controller.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
         "../src/tasks/services/tasks.service.ts",
-        "../src/tasks/models/task.model.ts",
+        "../src/database/models/task.interface.ts",
         "../src/tasks/dto/create-task.dto.ts",
         "../src/tasks/dto/get-tasks-filter.dto.ts",
         "../src/tasks/pipes/task-status-validation.pipe.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/database/providers/database.providers.ts": [
+        "../node_modules/@types/mongoose/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/database/database.module.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../src/database/providers/database.providers.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/database/schemas/tasks.schema.ts": [
+        "../node_modules/@types/mongoose/index.d.ts",
+        "../src/database/models/task.interface.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/database/providers/tasks.providers.ts": [
+        "../node_modules/@types/mongoose/index.d.ts",
+        "../src/database/schemas/tasks.schema.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -3954,8 +3963,8 @@
         "../node_modules/@nestjs/common/index.d.ts",
         "../src/tasks/controllers/tasks.controller.ts",
         "../src/tasks/services/tasks.service.ts",
-        "../node_modules/@nestjs/mongoose/index.d.ts",
-        "../src/tasks/models/task.model.ts",
+        "../src/database/database.module.ts",
+        "../src/database/providers/tasks.providers.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -3963,7 +3972,6 @@
       ],
       "../src/app.module.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
-        "../node_modules/@nestjs/mongoose/index.d.ts",
         "../src/tasks/tasks.module.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
@@ -4231,9 +4239,30 @@
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
+      "../node_modules/chalk/types/index.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/dotenv/types/index.d.ts": [
+        "../node_modules/@types/node/ts3.2/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
       "../src/main.ts": [
         "../node_modules/@nestjs/core/index.d.ts",
         "../src/app.module.ts",
+        "../node_modules/chalk/types/index.d.ts",
+        "../node_modules/dotenv/types/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/middlewares/auth.middleware.ts": [
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -6684,65 +6713,37 @@
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "../node_modules/@nestjs/mongoose/dist/common/mongoose.decorators.d.ts": [
+      "../node_modules/@types/bson/index.d.ts": [
+        "../node_modules/@types/node/ts3.2/index.d.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "../node_modules/@nestjs/mongoose/dist/common/mongoose.utils.d.ts": [
-        "../node_modules/rxjs/index.d.ts",
+      "../node_modules/@types/mongodb/index.d.ts": [
+        "../node_modules/@types/bson/index.d.ts",
+        "../node_modules/@types/node/events.d.ts",
+        "../node_modules/@types/node/stream.d.ts",
+        "../node_modules/@types/node/tls.d.ts",
+        "../node_modules/@types/node/ts3.2/index.d.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "../node_modules/@nestjs/mongoose/dist/common/index.d.ts": [
-        "../node_modules/@nestjs/mongoose/dist/common/mongoose.decorators.d.ts",
-        "../node_modules/@nestjs/mongoose/dist/common/mongoose.utils.d.ts",
+      "../node_modules/@types/mongoose/index.d.ts": [
+        "../node_modules/@types/node/events.d.ts",
+        "../node_modules/@types/mongodb/index.d.ts",
+        "../node_modules/@types/node/stream.d.ts",
+        "../node_modules/@types/mongoose/index.d.ts",
+        "../node_modules/@types/node/ts3.2/index.d.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "../node_modules/@nestjs/mongoose/dist/interfaces/mongoose-options.interface.d.ts": [
-        "../node_modules/@nestjs/common/index.d.ts",
-        "../node_modules/@nestjs/common/interfaces/index.d.ts",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "../node_modules/@nestjs/mongoose/dist/interfaces/index.d.ts": [
-        "../node_modules/@nestjs/mongoose/dist/interfaces/mongoose-options.interface.d.ts",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "../node_modules/@nestjs/mongoose/dist/mongoose.module.d.ts": [
-        "../node_modules/@nestjs/common/index.d.ts",
-        "../node_modules/@nestjs/mongoose/dist/interfaces/mongoose-options.interface.d.ts",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "../node_modules/@nestjs/mongoose/dist/index.d.ts": [
-        "../node_modules/@nestjs/mongoose/dist/common/index.d.ts",
-        "../node_modules/@nestjs/mongoose/dist/interfaces/index.d.ts",
-        "../node_modules/@nestjs/mongoose/dist/mongoose.module.d.ts",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "../node_modules/@nestjs/mongoose/index.d.ts": [
-        "../node_modules/@nestjs/mongoose/dist/index.d.ts",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
+      "../src/database/models/task.interface.ts": [
+        "../node_modules/@types/mongoose/index.d.ts"
       ],
       "../node_modules/class-validator/validation/validationerror.d.ts": [
         "../node_modules/@types/node/fs.d.ts",
@@ -6886,22 +6887,32 @@
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
       "../src/tasks/dto/get-tasks-filter.dto.ts": [
-        "../src/tasks/models/task.model.ts"
+        "../src/database/models/task.interface.ts"
       ],
       "../src/tasks/services/tasks.service.ts": [
-        "../src/tasks/models/task.model.ts",
+        "../node_modules/@types/mongoose/index.d.ts",
+        "../src/database/models/task.interface.ts",
         "../src/tasks/dto/get-tasks-filter.dto.ts",
         "../src/tasks/dto/create-task.dto.ts"
       ],
       "../src/tasks/pipes/task-status-validation.pipe.ts": [
-        "../src/tasks/models/task.model.ts",
+        "../src/database/models/task.interface.ts",
         "../node_modules/@nestjs/common/index.d.ts"
       ],
       "../src/tasks/controllers/tasks.controller.ts": [
         "../src/tasks/services/tasks.service.ts",
         "../src/tasks/dto/get-tasks-filter.dto.ts",
-        "../src/tasks/models/task.model.ts",
+        "../src/database/models/task.interface.ts",
         "../src/tasks/dto/create-task.dto.ts"
+      ],
+      "../src/database/providers/database.providers.ts": [
+        "../node_modules/@types/mongoose/index.d.ts"
+      ],
+      "../src/database/schemas/tasks.schema.ts": [
+        "../node_modules/@types/mongoose/index.d.ts"
+      ],
+      "../src/database/providers/tasks.providers.ts": [
+        "../node_modules/@types/mongoose/index.d.ts"
       ],
       "../node_modules/@nestjs/core/adapters/http-adapter.d.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
@@ -7159,6 +7170,19 @@
         "../node_modules/@nestjs/core/nest-factory.d.ts",
         "../node_modules/@nestjs/core/router/index.d.ts",
         "../node_modules/@nestjs/core/services/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/chalk/types/index.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/dotenv/types/index.d.ts": [
+        "../node_modules/@types/node/ts3.2/index.d.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -7708,15 +7732,10 @@
       "../node_modules/@nestjs/common/utils/forward-ref.util.d.ts",
       "../node_modules/@nestjs/common/utils/index.d.ts",
       "../node_modules/@nestjs/common/index.d.ts",
-      "../node_modules/@nestjs/mongoose/dist/common/mongoose.decorators.d.ts",
-      "../node_modules/@nestjs/mongoose/dist/common/mongoose.utils.d.ts",
-      "../node_modules/@nestjs/mongoose/dist/common/index.d.ts",
-      "../node_modules/@nestjs/mongoose/dist/interfaces/mongoose-options.interface.d.ts",
-      "../node_modules/@nestjs/mongoose/dist/interfaces/index.d.ts",
-      "../node_modules/@nestjs/mongoose/dist/mongoose.module.d.ts",
-      "../node_modules/@nestjs/mongoose/dist/index.d.ts",
-      "../node_modules/@nestjs/mongoose/index.d.ts",
-      "../src/tasks/models/task.model.ts",
+      "../node_modules/@types/bson/index.d.ts",
+      "../node_modules/@types/mongodb/index.d.ts",
+      "../node_modules/@types/mongoose/index.d.ts",
+      "../src/database/models/task.interface.ts",
       "../node_modules/class-validator/validation/validationerror.d.ts",
       "../node_modules/class-validator/validation/validatoroptions.d.ts",
       "../node_modules/class-validator/validation-schema/validationschema.d.ts",
@@ -7737,8 +7756,12 @@
       "../node_modules/class-validator/index.d.ts",
       "../src/tasks/dto/get-tasks-filter.dto.ts",
       "../src/tasks/dto/create-task.dto.ts",
+      "../src/tasks/services/tasks.service.ts",
       "../src/tasks/pipes/task-status-validation.pipe.ts",
       "../src/tasks/controllers/tasks.controller.ts",
+      "../src/database/database.module.ts",
+      "../src/database/schemas/tasks.schema.ts",
+      "../src/database/providers/tasks.providers.ts",
       "../src/tasks/tasks.module.ts",
       "../src/app.module.ts",
       "../node_modules/@nestjs/core/adapters/http-adapter.d.ts",
@@ -7770,7 +7793,10 @@
       "../node_modules/@nestjs/core/services/reflector.service.d.ts",
       "../node_modules/@nestjs/core/services/index.d.ts",
       "../node_modules/@nestjs/core/index.d.ts",
+      "../node_modules/chalk/types/index.d.ts",
+      "../node_modules/dotenv/types/index.d.ts",
       "../src/main.ts",
+      "../src/middlewares/auth.middleware.ts",
       "../node_modules/@types/anymatch/index.d.ts",
       "../node_modules/@babel/types/lib/index.d.ts",
       "../node_modules/@types/babel__generator/index.d.ts",
@@ -7807,7 +7833,7 @@
       "../node_modules/@types/webpack/index.d.ts",
       "../node_modules/@types/yargs-parser/index.d.ts",
       "../node_modules/@types/yargs/index.d.ts",
-      "../src/tasks/services/tasks.service.ts"
+      "../src/database/providers/database.providers.ts"
     ]
   },
   "version": "3.7.2"

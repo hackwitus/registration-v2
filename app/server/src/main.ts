@@ -1,12 +1,16 @@
 import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
+import chalk from 'chalk';
+import * as dotenv from 'dotenv';
+
+dotenv.config();
 
 async function bootstrap(port: number | string) {
   const app = await NestFactory.create(AppModule);
   await app.listen(port);
   if (process.env.NODE_ENV === 'DEVELOPMENT') {
     // tslint:disable-next-line:no-console
-    console.log(`App listening on port ${port}`);
+    console.log(chalk.green(`App listening on port ${chalk.blue('' + port)}`));
   }
 }
-bootstrap(8080);
+bootstrap(process.env.PORT);
