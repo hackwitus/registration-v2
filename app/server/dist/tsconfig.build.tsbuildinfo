@@ -1105,32 +1105,140 @@
         "version": "e0e01013f40a172c13d53c88ce2695741df27852da7ede9e2e336c86c43c8ec5",
         "signature": "e0e01013f40a172c13d53c88ce2695741df27852da7ede9e2e336c86c43c8ec5"
       },
-      "../src/tasks/models/task.model.ts": {
-        "version": "572650f261fdf3f3dc97bd6196e28c82f7da16ee3301e3482c397ea6318ef3ee",
-        "signature": "1f1972745fd56e4323782ccdc86730f1ae6b07fc29012c7c2a2872104f6d6fca"
+      "../node_modules/@nestjs/mongoose/dist/common/mongoose.decorators.d.ts": {
+        "version": "120fe6ff3f553b3d2a0e065b6fea421698be40a802273652871273338085873c",
+        "signature": "120fe6ff3f553b3d2a0e065b6fea421698be40a802273652871273338085873c"
       },
-      "../src/tasks/dto/create-task.dto.ts": {
-        "version": "ae1bacdc00551057515861f2a5db26654f1d654a8ceef341659c1a295274fa5c",
-        "signature": "b1d26f03607e121c7317f85d8725d2562ea98694c85f768a3db85be2488756e3"
+      "../node_modules/@nestjs/mongoose/dist/common/mongoose.utils.d.ts": {
+        "version": "94f798f2ee81af6b0767403ef94fbc6d7d7a5e2dc0953a2ea3de98f2cab587c2",
+        "signature": "94f798f2ee81af6b0767403ef94fbc6d7d7a5e2dc0953a2ea3de98f2cab587c2"
+      },
+      "../node_modules/@nestjs/mongoose/dist/common/index.d.ts": {
+        "version": "23dbd21c1fe8ee7c2e1b260de8610d1ce67a785cd40d349520306c8d876385c4",
+        "signature": "23dbd21c1fe8ee7c2e1b260de8610d1ce67a785cd40d349520306c8d876385c4"
+      },
+      "../node_modules/@nestjs/mongoose/dist/interfaces/mongoose-options.interface.d.ts": {
+        "version": "bea1e44197be52c026ebffdc129afc6cac229b9ec6a86ab3ebdc07bec77ebe23",
+        "signature": "bea1e44197be52c026ebffdc129afc6cac229b9ec6a86ab3ebdc07bec77ebe23"
+      },
+      "../node_modules/@nestjs/mongoose/dist/interfaces/index.d.ts": {
+        "version": "69c9dd7f908cc12704299ad7ab4b667692800279d4df885ec9793f0317234b57",
+        "signature": "69c9dd7f908cc12704299ad7ab4b667692800279d4df885ec9793f0317234b57"
+      },
+      "../node_modules/@nestjs/mongoose/dist/mongoose.module.d.ts": {
+        "version": "729bc6ae2f8b0a4f973660582b6fca33247e82733ea44162dfc98cfae6f81059",
+        "signature": "729bc6ae2f8b0a4f973660582b6fca33247e82733ea44162dfc98cfae6f81059"
+      },
+      "../node_modules/@nestjs/mongoose/dist/index.d.ts": {
+        "version": "1566c3bf94fd979425350fd0d2dd2e814c9399c7217f58186467c548f7711e58",
+        "signature": "1566c3bf94fd979425350fd0d2dd2e814c9399c7217f58186467c548f7711e58"
+      },
+      "../node_modules/@nestjs/mongoose/index.d.ts": {
+        "version": "8f1241f5d9f0d3d72117768b3c974e462840fbd85026fb66685078945404cf2f",
+        "signature": "8f1241f5d9f0d3d72117768b3c974e462840fbd85026fb66685078945404cf2f"
+      },
+      "../src/tasks/models/task.model.ts": {
+        "version": "71e2b81abd8c6960cf978c7e40cc02a94d12dc0f9a124cbec9a32e964f39613c",
+        "signature": "367307e50956e97b64839849ffc8ceaf5cd7439ad06cb05310440e8238c0dbe5"
+      },
+      "../node_modules/class-validator/validation/validationerror.d.ts": {
+        "version": "8b5ad058f8dab857050fdbb092b9f1267d22641f0f746cd8a7abee85b48bb83a",
+        "signature": "8b5ad058f8dab857050fdbb092b9f1267d22641f0f746cd8a7abee85b48bb83a"
+      },
+      "../node_modules/class-validator/validation/validatoroptions.d.ts": {
+        "version": "d3c0c471c298dc7115ada6c07f78d4fafb088523a301cb539c5cb44dae009954",
+        "signature": "d3c0c471c298dc7115ada6c07f78d4fafb088523a301cb539c5cb44dae009954"
+      },
+      "../node_modules/class-validator/validation-schema/validationschema.d.ts": {
+        "version": "86f89124a90fae1b90421bcce1e0ba58614383ca72403bfc03ff89761b050a4d",
+        "signature": "86f89124a90fae1b90421bcce1e0ba58614383ca72403bfc03ff89761b050a4d"
+      },
+      "../node_modules/class-validator/container.d.ts": {
+        "version": "5a6fbec8c8e62c37e9685a91a6ef0f6ecaddb1ee90f7b2c2b71b454b40a0d9a6",
+        "signature": "5a6fbec8c8e62c37e9685a91a6ef0f6ecaddb1ee90f7b2c2b71b454b40a0d9a6"
+      },
+      "../node_modules/@types/validator/index.d.ts": {
+        "version": "930f4dcf2bf161cde0f737e6fb1ee8ad1c54f3b7bdf64d18adc4c2521f48aaa8",
+        "signature": "930f4dcf2bf161cde0f737e6fb1ee8ad1c54f3b7bdf64d18adc4c2521f48aaa8"
+      },
+      "../node_modules/class-validator/validation/validationtypeoptions.d.ts": {
+        "version": "367b353f3a003d31a72ad3b1cef5c933b71889ae86cb645520d1681014e79ab9",
+        "signature": "367b353f3a003d31a72ad3b1cef5c933b71889ae86cb645520d1681014e79ab9"
+      },
+      "../node_modules/class-validator/validation/validationarguments.d.ts": {
+        "version": "f049af45e62625e0be51a3badd311110abf1ac8b23f56689e1d850923f6d9aac",
+        "signature": "f049af45e62625e0be51a3badd311110abf1ac8b23f56689e1d850923f6d9aac"
+      },
+      "../node_modules/class-validator/decorator/validationoptions.d.ts": {
+        "version": "e700a3327eb9f018b9af7a56d9214383919103950141d2e44a4a1cd59bbe67c6",
+        "signature": "e700a3327eb9f018b9af7a56d9214383919103950141d2e44a4a1cd59bbe67c6"
+      },
+      "../node_modules/class-validator/decorator/decorators.d.ts": {
+        "version": "34d83ecda22cb58a70c3c51bb356d94222ed15ba82880dfb7309e74d281804ef",
+        "signature": "34d83ecda22cb58a70c3c51bb356d94222ed15ba82880dfb7309e74d281804ef"
+      },
+      "../node_modules/class-validator/validation/validatorconstraintinterface.d.ts": {
+        "version": "8e7c8386c3700086085770ac298d37de34bd290db95938f5c77f1ab83fa67c52",
+        "signature": "8e7c8386c3700086085770ac298d37de34bd290db95938f5c77f1ab83fa67c52"
+      },
+      "../node_modules/class-validator/validation/validationtypes.d.ts": {
+        "version": "b9448353389cfb3d7fed5fc0d23ca87b0ac16149b89ba8c9c8ae568d01b8c3ad",
+        "signature": "b9448353389cfb3d7fed5fc0d23ca87b0ac16149b89ba8c9c8ae568d01b8c3ad"
+      },
+      "../node_modules/class-validator/metadata/validationmetadataargs.d.ts": {
+        "version": "8f29f65ce09040175a948aeb38af31f34367123903c49b556a76097bcb8fe813",
+        "signature": "8f29f65ce09040175a948aeb38af31f34367123903c49b556a76097bcb8fe813"
+      },
+      "../node_modules/class-validator/metadata/validationmetadata.d.ts": {
+        "version": "8be85fd3849c702cd34aee594b4e9773dceca300cc358c63d75a3118720b12fe",
+        "signature": "8be85fd3849c702cd34aee594b4e9773dceca300cc358c63d75a3118720b12fe"
+      },
+      "../node_modules/class-validator/validation/validator.d.ts": {
+        "version": "3d0b16232d130758c990594006dd24361a7cf3a5efc86b1ec6d6af61c0b2ea67",
+        "signature": "3d0b16232d130758c990594006dd24361a7cf3a5efc86b1ec6d6af61c0b2ea67"
+      },
+      "../node_modules/class-validator/register-decorator.d.ts": {
+        "version": "ea96782b5b69f29f37be42c51f944a0a4a478cbe3fed1d2ec25cffd5bd3617a4",
+        "signature": "ea96782b5b69f29f37be42c51f944a0a4a478cbe3fed1d2ec25cffd5bd3617a4"
+      },
+      "../node_modules/class-validator/metadata/constraintmetadata.d.ts": {
+        "version": "bb71811f328b358d990e298006492de623964862240de7eb6342e5efb8aafae9",
+        "signature": "bb71811f328b358d990e298006492de623964862240de7eb6342e5efb8aafae9"
+      },
+      "../node_modules/class-validator/metadata/metadatastorage.d.ts": {
+        "version": "c569d4d6f3aa771dc1600a73bd8f1b714e10a75218379d93f9cf6bc13bbc0ab0",
+        "signature": "c569d4d6f3aa771dc1600a73bd8f1b714e10a75218379d93f9cf6bc13bbc0ab0"
+      },
+      "../node_modules/class-validator/index.d.ts": {
+        "version": "70aecfd981af29d74ba7ab6667b9cc2a53459d8eb099c139fd2aa54c3059c71d",
+        "signature": "70aecfd981af29d74ba7ab6667b9cc2a53459d8eb099c139fd2aa54c3059c71d"
       },
       "../src/tasks/dto/get-tasks-filter.dto.ts": {
-        "version": "9167949c0e0eeb6e129e3b966ecb5d3b34f2c2f9e8b5bdc8231d72630036cd1b",
+        "version": "2737119329c7472717518c800c2554dbd583acb3def02d2781a2c34272e6cf82",
         "signature": "65c81dff2b43c74f08619eff20824854f86ae9814a11d75b8df9f8c07e33f5cc"
       },
+      "../src/tasks/dto/create-task.dto.ts": {
+        "version": "4d558c0fc3e9d66dd760fea51ad31f27f408c5ea82237922618cdeb63b1b467e",
+        "signature": "b1d26f03607e121c7317f85d8725d2562ea98694c85f768a3db85be2488756e3"
+      },
       "../src/tasks/services/tasks.service.ts": {
-        "version": "d785a24eae22ebcf9ae319517f946123dd1d0d2d2443ebf289d50b167842804f",
-        "signature": "7df1dc9c95a8ef43e30c6cc2372f804d23bb72cbdd6ebd1293a2c22ba85a5e07"
+        "version": "d26181d332010650b5412171eb649117c10905ac0222433b31bd79cfc3043fca",
+        "signature": "46506f48551da66536ac8f582922e658cbb6a7fa8f4ef5f168752d3e2f28e45d"
+      },
+      "../src/tasks/pipes/task-status-validation.pipe.ts": {
+        "version": "69d8188966d65b65ccc1ecf2c66c42ee5af0f25b97ce36949a478679e1ea7c07",
+        "signature": "200d2288c457877c4ba49b13d3575dfd20f458502b0054c6681cce2e0ca7408a"
       },
       "../src/tasks/controllers/tasks.controller.ts": {
-        "version": "dc6589907866287c4ac5722b216e7aa92e8c30218afb8f8a0ca0b4157bda472f",
-        "signature": "bfad8508518a464dddd9326cfd79057fa8fe17e51c6860378d606a5f485ac82d"
+        "version": "9500227e74e815255ed6bebf306e6d8997b4a8532076637f5d8f6fc62eeae52b",
+        "signature": "5fc665b02c6633a7c027fb5e2918384d2e9627636ad6240850ff3a2066d9d76e"
       },
       "../src/tasks/tasks.module.ts": {
-        "version": "31d66300ff976c9f11d7febea2d5c42bb912f5a2799b2cbc2d4b09eca569f270",
+        "version": "6a03a46153ab57a840b01a783f7094e148b7dd1e88096ffc434b9e9018e1b516",
         "signature": "957753c3d8b7f5d76f3b7dcceab5c1f0b308580c6b4e2819f77518edb37b6c5f"
       },
       "../src/app.module.ts": {
-        "version": "fc60c1ffd4d957a8f773ab5ad3dd933a56f811e02cce6024eeadb719e3ecf90f",
+        "version": "84830250c5c7c282a47cd63fcda1688b1252bf6058592b7ea1e9212f679ed5d1",
         "signature": "b82491e2990291580288c5602d4c017238977749d52b17391f0e45d9a29be644"
       },
       "../node_modules/@nestjs/core/adapters/http-adapter.d.ts": {
@@ -3589,13 +3697,208 @@
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
+      "../node_modules/@nestjs/mongoose/dist/common/mongoose.decorators.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@nestjs/mongoose/dist/common/mongoose.utils.d.ts": [
+        "../node_modules/rxjs/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@nestjs/mongoose/dist/common/index.d.ts": [
+        "../node_modules/@nestjs/mongoose/dist/common/mongoose.decorators.d.ts",
+        "../node_modules/@nestjs/mongoose/dist/common/mongoose.utils.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@nestjs/mongoose/dist/interfaces/mongoose-options.interface.d.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@nestjs/common/interfaces/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@nestjs/mongoose/dist/interfaces/index.d.ts": [
+        "../node_modules/@nestjs/mongoose/dist/interfaces/mongoose-options.interface.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@nestjs/mongoose/dist/mongoose.module.d.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@nestjs/mongoose/dist/interfaces/mongoose-options.interface.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@nestjs/mongoose/dist/index.d.ts": [
+        "../node_modules/@nestjs/mongoose/dist/common/index.d.ts",
+        "../node_modules/@nestjs/mongoose/dist/interfaces/index.d.ts",
+        "../node_modules/@nestjs/mongoose/dist/mongoose.module.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@nestjs/mongoose/index.d.ts": [
+        "../node_modules/@nestjs/mongoose/dist/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
       "../src/tasks/models/task.model.ts": [
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "../src/tasks/dto/create-task.dto.ts": [
+      "../node_modules/class-validator/validation/validationerror.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-validator/validation/validatoroptions.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-validator/validation-schema/validationschema.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-validator/container.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@types/validator/index.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-validator/validation/validationtypeoptions.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-validator/validation/validationarguments.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-validator/decorator/validationoptions.d.ts": [
+        "../node_modules/class-validator/validation/validationarguments.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-validator/decorator/decorators.d.ts": [
+        "../node_modules/class-validator/validation/validationtypeoptions.d.ts",
+        "../node_modules/class-validator/decorator/validationoptions.d.ts",
+        "../node_modules/@types/validator/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-validator/validation/validatorconstraintinterface.d.ts": [
+        "../node_modules/class-validator/validation/validationarguments.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-validator/validation/validationtypes.d.ts": [
+        "../node_modules/class-validator/validation/validationarguments.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-validator/metadata/validationmetadataargs.d.ts": [
+        "../node_modules/class-validator/decorator/validationoptions.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-validator/metadata/validationmetadata.d.ts": [
+        "../node_modules/class-validator/metadata/validationmetadataargs.d.ts",
+        "../node_modules/class-validator/validation/validationarguments.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-validator/validation/validator.d.ts": [
+        "../node_modules/class-validator/metadata/validationmetadata.d.ts",
+        "../node_modules/class-validator/validation/validationerror.d.ts",
+        "../node_modules/class-validator/validation/validationtypeoptions.d.ts",
+        "../node_modules/class-validator/validation/validatoroptions.d.ts",
+        "../node_modules/@types/validator/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-validator/register-decorator.d.ts": [
+        "../node_modules/class-validator/validation/validatoroptions.d.ts",
+        "../node_modules/class-validator/validation/validatorconstraintinterface.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-validator/metadata/constraintmetadata.d.ts": [
+        "../node_modules/class-validator/validation/validatorconstraintinterface.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-validator/metadata/metadatastorage.d.ts": [
+        "../node_modules/class-validator/metadata/validationmetadata.d.ts",
+        "../node_modules/class-validator/metadata/constraintmetadata.d.ts",
+        "../node_modules/class-validator/validation-schema/validationschema.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-validator/index.d.ts": [
+        "../node_modules/class-validator/validation/validationerror.d.ts",
+        "../node_modules/class-validator/validation/validatoroptions.d.ts",
+        "../node_modules/class-validator/validation-schema/validationschema.d.ts",
+        "../node_modules/class-validator/container.d.ts",
+        "../node_modules/class-validator/decorator/decorators.d.ts",
+        "../node_modules/class-validator/decorator/validationoptions.d.ts",
+        "../node_modules/class-validator/validation/validatorconstraintinterface.d.ts",
+        "../node_modules/class-validator/validation/validationtypeoptions.d.ts",
+        "../node_modules/class-validator/validation/validationarguments.d.ts",
+        "../node_modules/class-validator/validation/validationtypes.d.ts",
+        "../node_modules/class-validator/validation/validator.d.ts",
+        "../node_modules/class-validator/register-decorator.d.ts",
+        "../node_modules/class-validator/metadata/metadatastorage.d.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -3603,6 +3906,14 @@
       ],
       "../src/tasks/dto/get-tasks-filter.dto.ts": [
         "../src/tasks/models/task.model.ts",
+        "../node_modules/class-validator/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/tasks/dto/create-task.dto.ts": [
+        "../node_modules/class-validator/index.d.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -3610,9 +3921,18 @@
       ],
       "../src/tasks/services/tasks.service.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@nestjs/mongoose/index.d.ts",
+        "../src/tasks/dto/get-tasks-filter.dto.ts",
         "../src/tasks/models/task.model.ts",
         "../src/tasks/dto/create-task.dto.ts",
-        "../src/tasks/dto/get-tasks-filter.dto.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/tasks/pipes/task-status-validation.pipe.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../src/tasks/models/task.model.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -3624,6 +3944,7 @@
         "../src/tasks/models/task.model.ts",
         "../src/tasks/dto/create-task.dto.ts",
         "../src/tasks/dto/get-tasks-filter.dto.ts",
+        "../src/tasks/pipes/task-status-validation.pipe.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -3633,6 +3954,8 @@
         "../node_modules/@nestjs/common/index.d.ts",
         "../src/tasks/controllers/tasks.controller.ts",
         "../src/tasks/services/tasks.service.ts",
+        "../node_modules/@nestjs/mongoose/index.d.ts",
+        "../src/tasks/models/task.model.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -3640,6 +3963,7 @@
       ],
       "../src/app.module.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@nestjs/mongoose/index.d.ts",
         "../src/tasks/tasks.module.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
@@ -6360,6 +6684,207 @@
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
+      "../node_modules/@nestjs/mongoose/dist/common/mongoose.decorators.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@nestjs/mongoose/dist/common/mongoose.utils.d.ts": [
+        "../node_modules/rxjs/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@nestjs/mongoose/dist/common/index.d.ts": [
+        "../node_modules/@nestjs/mongoose/dist/common/mongoose.decorators.d.ts",
+        "../node_modules/@nestjs/mongoose/dist/common/mongoose.utils.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@nestjs/mongoose/dist/interfaces/mongoose-options.interface.d.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@nestjs/common/interfaces/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@nestjs/mongoose/dist/interfaces/index.d.ts": [
+        "../node_modules/@nestjs/mongoose/dist/interfaces/mongoose-options.interface.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@nestjs/mongoose/dist/mongoose.module.d.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@nestjs/mongoose/dist/interfaces/mongoose-options.interface.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@nestjs/mongoose/dist/index.d.ts": [
+        "../node_modules/@nestjs/mongoose/dist/common/index.d.ts",
+        "../node_modules/@nestjs/mongoose/dist/interfaces/index.d.ts",
+        "../node_modules/@nestjs/mongoose/dist/mongoose.module.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@nestjs/mongoose/index.d.ts": [
+        "../node_modules/@nestjs/mongoose/dist/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-validator/validation/validationerror.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-validator/validation/validatoroptions.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-validator/validation-schema/validationschema.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-validator/container.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@types/validator/index.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-validator/validation/validationtypeoptions.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-validator/validation/validationarguments.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-validator/decorator/validationoptions.d.ts": [
+        "../node_modules/class-validator/validation/validationarguments.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-validator/decorator/decorators.d.ts": [
+        "../node_modules/class-validator/validation/validationtypeoptions.d.ts",
+        "../node_modules/class-validator/decorator/validationoptions.d.ts",
+        "../node_modules/@types/validator/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-validator/validation/validatorconstraintinterface.d.ts": [
+        "../node_modules/class-validator/validation/validationarguments.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-validator/validation/validationtypes.d.ts": [
+        "../node_modules/class-validator/validation/validationarguments.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-validator/metadata/validationmetadataargs.d.ts": [
+        "../node_modules/class-validator/decorator/validationoptions.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-validator/metadata/validationmetadata.d.ts": [
+        "../node_modules/class-validator/metadata/validationmetadataargs.d.ts",
+        "../node_modules/class-validator/validation/validationarguments.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-validator/validation/validator.d.ts": [
+        "../node_modules/class-validator/metadata/validationmetadata.d.ts",
+        "../node_modules/class-validator/validation/validationerror.d.ts",
+        "../node_modules/class-validator/validation/validationtypeoptions.d.ts",
+        "../node_modules/class-validator/validation/validatoroptions.d.ts",
+        "../node_modules/@types/validator/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-validator/register-decorator.d.ts": [
+        "../node_modules/class-validator/validation/validatoroptions.d.ts",
+        "../node_modules/class-validator/validation/validatorconstraintinterface.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-validator/metadata/constraintmetadata.d.ts": [
+        "../node_modules/class-validator/validation/validatorconstraintinterface.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-validator/metadata/metadatastorage.d.ts": [
+        "../node_modules/class-validator/metadata/validationmetadata.d.ts",
+        "../node_modules/class-validator/metadata/constraintmetadata.d.ts",
+        "../node_modules/class-validator/validation-schema/validationschema.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-validator/index.d.ts": [
+        "../node_modules/class-validator/validation/validationerror.d.ts",
+        "../node_modules/class-validator/validation/validatoroptions.d.ts",
+        "../node_modules/class-validator/validation-schema/validationschema.d.ts",
+        "../node_modules/class-validator/container.d.ts",
+        "../node_modules/class-validator/decorator/decorators.d.ts",
+        "../node_modules/class-validator/decorator/validationoptions.d.ts",
+        "../node_modules/class-validator/validation/validatorconstraintinterface.d.ts",
+        "../node_modules/class-validator/validation/validationtypeoptions.d.ts",
+        "../node_modules/class-validator/validation/validationarguments.d.ts",
+        "../node_modules/class-validator/validation/validationtypes.d.ts",
+        "../node_modules/class-validator/validation/validator.d.ts",
+        "../node_modules/class-validator/register-decorator.d.ts",
+        "../node_modules/class-validator/metadata/metadatastorage.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
       "../src/tasks/dto/get-tasks-filter.dto.ts": [
         "../src/tasks/models/task.model.ts"
       ],
@@ -6367,6 +6892,10 @@
         "../src/tasks/models/task.model.ts",
         "../src/tasks/dto/get-tasks-filter.dto.ts",
         "../src/tasks/dto/create-task.dto.ts"
+      ],
+      "../src/tasks/pipes/task-status-validation.pipe.ts": [
+        "../src/tasks/models/task.model.ts",
+        "../node_modules/@nestjs/common/index.d.ts"
       ],
       "../src/tasks/controllers/tasks.controller.ts": [
         "../src/tasks/services/tasks.service.ts",
@@ -7179,9 +7708,36 @@
       "../node_modules/@nestjs/common/utils/forward-ref.util.d.ts",
       "../node_modules/@nestjs/common/utils/index.d.ts",
       "../node_modules/@nestjs/common/index.d.ts",
+      "../node_modules/@nestjs/mongoose/dist/common/mongoose.decorators.d.ts",
+      "../node_modules/@nestjs/mongoose/dist/common/mongoose.utils.d.ts",
+      "../node_modules/@nestjs/mongoose/dist/common/index.d.ts",
+      "../node_modules/@nestjs/mongoose/dist/interfaces/mongoose-options.interface.d.ts",
+      "../node_modules/@nestjs/mongoose/dist/interfaces/index.d.ts",
+      "../node_modules/@nestjs/mongoose/dist/mongoose.module.d.ts",
+      "../node_modules/@nestjs/mongoose/dist/index.d.ts",
+      "../node_modules/@nestjs/mongoose/index.d.ts",
       "../src/tasks/models/task.model.ts",
-      "../src/tasks/dto/create-task.dto.ts",
+      "../node_modules/class-validator/validation/validationerror.d.ts",
+      "../node_modules/class-validator/validation/validatoroptions.d.ts",
+      "../node_modules/class-validator/validation-schema/validationschema.d.ts",
+      "../node_modules/class-validator/container.d.ts",
+      "../node_modules/@types/validator/index.d.ts",
+      "../node_modules/class-validator/validation/validationtypeoptions.d.ts",
+      "../node_modules/class-validator/validation/validationarguments.d.ts",
+      "../node_modules/class-validator/decorator/validationoptions.d.ts",
+      "../node_modules/class-validator/decorator/decorators.d.ts",
+      "../node_modules/class-validator/validation/validatorconstraintinterface.d.ts",
+      "../node_modules/class-validator/validation/validationtypes.d.ts",
+      "../node_modules/class-validator/metadata/validationmetadataargs.d.ts",
+      "../node_modules/class-validator/metadata/validationmetadata.d.ts",
+      "../node_modules/class-validator/validation/validator.d.ts",
+      "../node_modules/class-validator/register-decorator.d.ts",
+      "../node_modules/class-validator/metadata/constraintmetadata.d.ts",
+      "../node_modules/class-validator/metadata/metadatastorage.d.ts",
+      "../node_modules/class-validator/index.d.ts",
       "../src/tasks/dto/get-tasks-filter.dto.ts",
+      "../src/tasks/dto/create-task.dto.ts",
+      "../src/tasks/pipes/task-status-validation.pipe.ts",
       "../src/tasks/controllers/tasks.controller.ts",
       "../src/tasks/tasks.module.ts",
       "../src/app.module.ts",

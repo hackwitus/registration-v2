@@ -23,7 +23,7 @@ describe('Tasks Controller', () => {
 
   it('should return an array of tasks', async () => {
     const result: Task[] = [];
-    jest.spyOn(service, 'getAllTasks').mockImplementation(() => result);
+    jest.spyOn(service, 'getAllTasks').mockImplementation(async () => result);
 
     expect(await controller.getTasks()).toBe(result);
   });

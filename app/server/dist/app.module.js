@@ -7,12 +7,21 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const common_1 = require("@nestjs/common");
+const mongoose_1 = require("@nestjs/mongoose");
 const tasks_module_1 = require("./tasks/tasks.module");
 let AppModule = class AppModule {
 };
 AppModule = __decorate([
     common_1.Module({
-        imports: [tasks_module_1.TasksModule],
+        imports: [
+            tasks_module_1.TasksModule,
+            mongoose_1.MongooseModule.forRoot('mongodb://localhost:27017/nestjs', {
+                useNewUrlParser: true,
+                useFindAndModify: false,
+                useCreateIndex: true,
+                useUnifiedTopology: true,
+            }),
+        ],
     })
 ], AppModule);
 exports.AppModule = AppModule;

@@ -1,19 +1,27 @@
-import { Injectable } from '@nestjs/common';
+import { Injectable, NotFoundException } from '@nestjs/common';
+import { InjectModel } from '@nestjs/mongoose';
+import { Model } from 'mongoose';
 import * as uuid from 'uuid/v1';
+
+import { GetTasksFilterDto } from '../dto/get-tasks-filter.dto';
 import { Task, TaskStatus } from '../models/task.model';
 import { CreateTaskDto } from '../dto/create-task.dto';
-import { GetTasksFilterDto } from '../dto/get-tasks-filter.dto';
 
 @Injectable()
 export class TasksService {
   private tasks: Task[] = [];
 
-  getAllTasks(): Task[] {
-    return this.tasks;
+  constructor(@InjectModel('Task') private readonly taskModel: Model<Task>) {}
+
+  async getAllTasks(): Promise<Task[]> {
+    return await this.taskModel.find();
   }
 
-  getTasksWithFilters({ status, search }: GetTasksFilterDto): Task[] {
-    let tasks = this.getAllTasks();
+  async getTasksWithFilters({
+    status,
+    search,
+  }: GetTasksFilterDto): Promise<Task[]> {
+    let tasks = await this.getAllTasks();
 
     if (status) {
       tasks = tasks.filter((task: Task) => task.status === status);
@@ -29,28 +37,32 @@ export class TasksService {
     return tasks;
   }
 
-  getTaskById(id: string): Task {
-    return this.tasks.find((task: Task) => task.id === id);
+  async getTaskById(id: string): Promise<Task> {
+    const found = await this.taskModel.findById(id);
+    if (!found) {
+      throw new NotFoundException(`Task with ID '${id}' not found`);
+    }
+
+    return found;
   }
 
-  createTask({ title, description }: CreateTaskDto): Task {
-    const task: Task = {
+  async createTask({ title, description }: CreateTaskDto): Promise<Task> {
+    const newTask = new this.taskModel({
       id: uuid(),
       title,
       description,
       status: TaskStatus.OPEN,
-    };
-    this.tasks.push(task);
-    return task;
+    });
+    return await newTask.save();
   }
 
-  deleteTaskById(id: string): void {
-    this.tasks = this.tasks.filter((task: Task) => task.id !== id);
+  async deleteTaskById(id: string): Promise<void> {
+    const found = await this.getTaskById(id);
+    return await this.taskModel.findByIdAndRemove(found.id);
   }
 
-  updateTaskStatusById(id: string, status: TaskStatus): Task {
-    const task = this.getTaskById(id);
-    task.status = status;
-    return task;
+  async updateTaskStatusById(id: string, status: TaskStatus): Promise<Task> {
+    const task = await this.getTaskById(id);
+    return await this.taskModel.updateOne({ _id: id }, { $set: { status } });
   }
 }
