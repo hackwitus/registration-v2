@@ -13,7 +13,7 @@
     "@types/redux-persist": "4.3.1",
     "@types/redux-saga": "0.10.5",
     "@types/yup": "^0.26.24",
-    "auth0-js": "9.11.3",
+    "auth0-js": "9.13.2",
     "classnames": "2.2.6",
     "connected-react-router": "6.5.2",
     "enzyme": "3.10.0",
