@@ -22,7 +22,7 @@
     "eslint-plugin-react": "7.16.0",
     "formik": "1.5.8",
     "history": "4.10.1",
-    "node-sass": "4.12.0",
+    "node-sass": "4.13.1",
     "react": "16.10.2",
     "react-dom": "16.10.2",
     "react-redux": "7.1.1",
